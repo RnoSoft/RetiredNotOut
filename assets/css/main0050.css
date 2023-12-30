@@ -150,6 +150,21 @@ a:active {
     padding: 0;
 }
 
+.container .main-area-post-left p .img-landscape {
+    text-align: center;
+    max-width: 80%;
+    height: auto;
+    margin: 0.3em 0 0.3em 0;
+    border: 1px solid black;
+}
+
+.container .main-area-post-left p .img-portrait {
+    text-align: center;
+    max-width: 50%;
+    height: auto;
+    margin: 0.3em 0 0.3em 0;
+    border: 1px solid black;
+}
 .container .main-area-post-centre {
     flex: 0 0 auto;
     margin: 0;
