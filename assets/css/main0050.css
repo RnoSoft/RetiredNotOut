@@ -152,7 +152,7 @@ a:active {
 
 .container .main-area-post-left p .img-landscape {
     text-align: center;
-    max-width: 80%;
+    max-width: 60%;
     height: auto;
     margin: 0.3em 0 0.3em 0;
     border: 1px solid black;
@@ -160,7 +160,7 @@ a:active {
 
 .container .main-area-post-left p .img-portrait {
     text-align: center;
-    max-width: 50%;
+    max-width: 30%;
     height: auto;
     margin: 0.3em 0 0.3em 0;
     border: 1px solid black;
@@ -196,7 +196,7 @@ a:active {
 
 .container .main-area-post-centre p .img-landscape {
     text-align: center;
-    max-width: 80%;
+    max-width: 60%;
     height: auto;
     margin: 0.3em 0 0.3em 0;
     border: 1px solid black;
@@ -204,7 +204,7 @@ a:active {
 
 .container .main-area-post-centre p .img-portrait {
     text-align: center;
-    max-width: 50%;
+    max-width: 30%;
     height: auto;
     margin: 0.3em 0 0.3em 0;
     border: 1px solid black;
@@ -477,7 +477,7 @@ a:active {
         max-width: 40%;
     }
     .main-area-article .fic-desphoto {
-        max-width: 40%;
+        max-width: 30%;
     }
 }
 
