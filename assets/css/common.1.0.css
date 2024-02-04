@@ -139,16 +139,26 @@ li {
 
 .image-left {
     float: left;
-    margin: 0 1em 0.25em 0;
+    margin: 0.3em 1em 0.25em 0;
     border: 1px solid black;
     padding: 0;
 }
 
 .image-right {
     float: right;
-    margin: 0 0 0.25em 1em;
+    margin: 0.3em 0 0.25em 1em;
     border: 1px solid black;
     padding: 0;
+}
+
+.image-center {
+    clear: both;
+    display: block;
+    text-align: center;
+    margin: 0.3em auto 0.25em auto;
+    border: 1px solid black;
+    padding: 0;
+    line-height: 1.5;
 }
 
 .maxwidth-10 { max-width: 10%}
