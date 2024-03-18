@@ -1,4 +1,4 @@
-:root {
+header-bot-nav-item:root {
     font-size: 0.8rem;
     box-sizing: border-box;
 }
@@ -248,9 +248,39 @@ li {
     Header css - all css for the header needs to be here so it can be customised.
    ------------------------------------------------------------------------------ */
 
+.header-top-nav {
+    display: flex;
+    flex: row;
+    justify-content: right;
+    margin: 0 0 0.25em 0;
+    border: 0;
+    padding: 0;
+}
+
+.header-top-nav .header-top-nav-item {
+    flex: 0 0 auto;
+    line-height: 1.2;
+    margin: 0;
+    border: 0;
+    padding: 0 0.20em 0 0.20em;
+}
+
+.header-top-nav .header-top-nav-cur {
+    font-weight: bold;
+}
+
+@media screen and (min-width: 500px) {
+    .header-top-nav .header-top-nav-item{
+        padding: 0 0.25em 0 0.25em;
+    }
+}
+
 .header-figure {
     display: block;
     position: relative;
+    margin: 0;
+    border: 0;
+    padding: 0;
 }
 
 .header-figure > img {
@@ -302,29 +332,28 @@ li {
     text-decoration: none;
 }
 
-.header-nav {
+.header-bot-nav {
     display: flex;
-    flex: row;
+    flex-wrap: wrap;
     justify-content: center;
     margin: 0;
     border: 0;
     padding: 0;
 }
 
-.header-nav > p > .header-nav-item {
+.header-bot-nav .header-bot-nav-item {
     flex: 0 0 auto;
-    line-height: 1;
     margin: 0;
     border: 0;
-    padding: 0 0.15em 0 0.15em;
+    padding: 0 0.2em 0 0.2em;
 }
 
-.header-nav > p >  .header-nav-item-cur {
+.header-bot-nav  .header-bot-nav-cur {
     font-weight: bold;
 }
 
 @media screen and (min-width: 500px) {
-    .header-nav > p  > .header-nav-item{
+    .header-bot-nav .header-bot-nav-item{
         padding: 0 0.25em 0 0.25em;
     }
 }
@@ -372,25 +401,23 @@ li {
 
 .foot-nav {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     clear: both;
-    margin-top: 0.1em;
-    margin-bottom: 0em;
+    margin-top: 0.25em;
+    margin-bottom: 0.25em;
 }
 
-.foot-nav > p {
-    font-size: 0.9em;
-}
-
-.foot-nav p > .foot-nav-item {
+.foot-nav .foot-nav-item {
     flex: 0 0 auto; 
-    line-height: 1;
+    line-height: 1.1;
     margin: 0;
     border: 0;
-    padding: 0 0.15em 0 0.15em;
+    padding: 0 0.2em 0 0.2em;
+    font-size: 0.9rem;
 }
 
-.foot-nav > p > .foot-nav-curr {
+.foot-nav .foot-nav-cur {
     font-weight: bold;
 }
 
@@ -398,13 +425,11 @@ li {
     .foot-nav {
         margin-top: 0em;
         margin-bottom: 0.25em;
-    }
-
-    .foot-nav > p {
         font-size: 1.0em;
     }
 
-    .foot-nav > p > .foot-nav-item {
+    .foot-nav .foot-nav-item {
         padding: 0 0.25em 0 0.25em;
+        font-size: 1.0rem;
     }
 }
