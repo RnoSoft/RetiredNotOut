@@ -54,7 +54,6 @@ li {
 @media screen and (min-width: 500px) {
     body {
         line-height: 1.5;
-        background-color: rgb(250, 250, 250);
     }
 
     body * + * {
@@ -264,6 +263,7 @@ li {
     margin: 0;
     border: 0;
     padding: 0 0.20em 0 0.20em;
+    line-height: 1.3;
 }
 
 .header-top-nav .header-top-nav-cur {
@@ -347,8 +347,6 @@ li {
     margin: 0;
     border: 0;
     padding: 0 0.2em 0 0.2em;
-    line-height: 1.3;
-    font-size: 1.1rem;
 }
 
 .header-bot-nav  .header-bot-nav-cur {
@@ -358,6 +356,7 @@ li {
 @media screen and (min-width: 500px) {
     .header-bot-nav .header-bot-nav-item{
         padding: 0 0.25em 0 0.25em;
+        line-height: 1.3;
     }
 }
 
@@ -403,7 +402,7 @@ li {
     flex-wrap: wrap;
     justify-content: center;
     clear: both;
-    margin: 0.25em 0 0.25em 0;
+    margin: 0.25em 0 2.5em 0;
 }
 
 .foot-nav .foot-nav-item {
@@ -412,7 +411,6 @@ li {
     border: 0;
     padding: 0 0.2em 0 0.2em;
     line-height: 1.3;
-    font-size: 1.1rem;
 }
 
 .foot-nav .foot-nav-cur {
