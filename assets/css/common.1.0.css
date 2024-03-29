@@ -22,7 +22,7 @@ body {
     border: 0;
     padding: 0;
     color: rgb(90, 90, 90);
-    background-color: orange;
+    background-color: rgb(250, 250, 250);
     font-family: Calibri, Arial, Helvetica, sans-serif;
     line-height: 1.3;
 }
@@ -54,7 +54,7 @@ li {
 @media screen and (min-width: 500px) {
     body {
         line-height: 1.5;
-        background-color: yellowgreen;
+        background-color: rgb(250, 250, 250);
     }
 
     body * + * {
@@ -293,7 +293,7 @@ li {
     color: white;
     top: 5px;
     left: 5px;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     font-weight: bold;
     line-height: 1;
     margin: 0;
@@ -305,7 +305,7 @@ li {
     .header-figure > figcaption {
         top: 10px;
         left: 10px;
-        font-size: 1.5rem;
+        font-size: 1.4rem;
     }
 }
 @media screen and (min-width: 750px) {
