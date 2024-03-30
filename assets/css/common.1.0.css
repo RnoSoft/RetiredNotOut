@@ -276,6 +276,11 @@ li {
     }
 }
 
+.header-text {
+    text-align: center;
+    margin: 0.25em 0 0.25em 0;
+}
+
 .header-figure {
     display: block;
     position: relative;
@@ -286,52 +291,8 @@ li {
 
 .header-figure > img {
     width: 100%;
+    border: 1px solid rgb(153, 143, 143);
 } 
-
-.header-figure > figcaption {
-    position: absolute; 
-    color: white;
-    top: 5px;
-    left: 5px;
-    font-size: 1.2rem;
-    font-weight: bold;
-    line-height: 1;
-    margin: 0;
-    border: 0;
-    padding: 0;
-}
-
-@media screen and (min-width: 500px) {
-    .header-figure > figcaption {
-        top: 10px;
-        left: 10px;
-        font-size: 1.4rem;
-    }
-}
-@media screen and (min-width: 750px) {
-    .header-figure > figcaption {
-        top: 10px;
-        left: 10px;
-        font-size: 1.7rem;
-    }
-}
-
-.header-figure > figcaption > a:link {
-    color: white;
-    text-decoration: none;
-}
-.header-figure > figcaption > a:visited {
-    color:  white;
-    text-decoration: none;
-}
-.header-figure > figcaption > a:hover {
-    color: white;
-    text-decoration: underline;
-}
-.header-figure > figcaption > a:active {
-    color:  white;
-    text-decoration: none;
-}
 
 .header-bot-nav {
     display: flex;
