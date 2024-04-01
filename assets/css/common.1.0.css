@@ -339,14 +339,14 @@ li {
     flex-wrap: wrap;
     justify-content: center;
     clear: both;
-    margin: 0.25em 0 0.25em 0;
+    margin: 0.25em 0 0.5em 0;
 }
 
 .foot-nav .foot-nav-item {
     flex: 0 0 auto; 
     margin: 0;
     border: 0;
-    padding: 0 0.2em 0 0.2em;
+    padding: 0 0.35em 0 0.35em;
     line-height: 1.6;
 }
 
