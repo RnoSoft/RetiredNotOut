@@ -29,7 +29,7 @@
     flex: row;
     flex-wrap: wrap;
     justify-content: center;
-    margin: .75em 0 0 0;
+    margin: 0 1.5em 0 1.5em;
     border: 0;
     padding: 0;
 }
@@ -37,16 +37,19 @@
 .article-area .post-tags-nav p {   
     flex: 0 0 auto; 
     line-height: 1;
-    margin: 0.3em 0.3em;
-    border: 1px solid black;
+    margin: 0.75em 0.2em 0 0.2em;
+    border: 0;
+    padding: 0
+    /* border: 1px solid black;
     border-radius: 10px;
-    padding: .20em .6em;
-    background-color: rgba(128, 128, 128, 0.24);
+    background-color: rgba(128, 128, 128, 0.24); */
 }
 
 @media screen and (min-width: 500px) {
+    .article-area .post-tags-nav  {
+        margin: 0 2.5em 0 2.5em;
+    }
     .article-area .post-tags-nav p  {
-        margin: 0.3em 0.3em;
-        padding: .25em .75em;
+        margin: 0.75em 0.2em 0 0.2em;
     }
 }
