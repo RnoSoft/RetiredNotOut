@@ -123,6 +123,14 @@ li {
     text-align: center;
 }
 
+.text-left {
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
+}
+
 .no-mbp {
     margin: 0;
     border: 0;
@@ -247,20 +255,59 @@ li {
     Header css - all css for the header needs to be here so it can be customised.
    ------------------------------------------------------------------------------ */
 
-.header-title {
+.header-image {
+    position: relative;
     text-align: center;
-    margin: 0.25em 0 0.25em 0;
+    color: white;
+    margin: 0;
     border: 0;
     padding: 0;
-    font-size: 1.2rem;
 }
 
-.header-image {
-    width: 100%;
-    margin: 0;
-    border: 1px solid rgb(153, 143, 143);
-    padding: 0;
+.header-image img {
+    width:100%;
+    border: 1px solid black;
+}
+
+.header-image .header-image-bc {
+    position: absolute;
+    bottom: 12px;
+    left: 50%;
+    transform: translate(-50%, 0%);
+}
+
+.header-image p {
+    font-size: 1.4rem;
+    font-weight: bold;
+    line-height: 1;
+}
+.header-image p a:link {
+    color: white;
+    text-decoration: none;
+}
+.header-image p a:visited {
+    color: white;
+    text-decoration: none;
+}
+.header-image p a:hover {
+    color: white;
+    text-decoration: underline;
+}
+.header-image p :active {
+    color: white;
+    text-decoration: none;
 } 
+
+@media screen and (min-width: 500px) {
+    .header-image .header-image-bc {
+        bottom: 20px;
+        left: 50%;
+        transform: translate(-50%, 0%); 
+    }
+    .header-image p {
+        font-size: 1.9rem;
+    }
+}
 
 .header-nav {
     display: flex;
@@ -275,7 +322,7 @@ li {
     flex: 0 0 auto;
     margin: 0;
     border: 0;
-    padding: 0 0.35em 0 0.35em;
+    padding: 0 0.2em 0 0.2em;
     line-height: 1.6;
     font-size: 1.1rem;
 }
@@ -285,10 +332,10 @@ li {
 }
 
 @media screen and (min-width: 500px) {
-    .header-title {
+    /* .header-title {
         margin: 0.25em 0 0.25em 0;
         font-size: 1.4rem;
-    }
+    } */
 
     .header-nav .header-nav-item{
         padding: 0 0.25em 0 0.25em;
