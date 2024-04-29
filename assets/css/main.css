@@ -1,120 +1,3 @@
-:root {
-    font-size: 0.8rem;
-    box-sizing: border-box;
-}
-@media screen and (min-width: 500px) {
-    :root {
-        font-size: 0.9rem;
-    }
-}
-
-*, ::before, ::after {
-    box-sizing: inherit;
-    margin: 0;
-    border: 0;
-    padding: 0;
-    z-index: 1;
-}
-
-body {
-    max-width: 1000px;
-    margin: 0 auto 0 auto;
-    border: 0;
-    padding: 0;
-    color: rgb(90, 90, 90);
-    background-color: rgb(250, 250, 250);
-    font-family: Calibri, Arial, Helvetica, sans-serif;
-    line-height: 1.3;
-}
-
-/* Lobotomised Owl - this causes problems when leaflet is used for a map. */
-body * + * {
-    margin-top: 0.8em;
-}
-
-h1 {
-    font-size: 1.2rem;
-}
-h2 {
-    font-size: 1.1rem;
-}
-h3 {
-    font-size: 1.0rem;
-}
-h4 {
-    font-size: 1.0rem;
-}
-p {
-    font-size: 1.0rem;
-}
-li {
-    font-size: 1.0rem;
-}
-
-@media screen and (min-width: 500px) {
-    body {
-        line-height: 1.5;
-    }
-
-    body * + * {
-        margin-top: 0.9em;
-    } 
-
-    h1 {
-        font-size: 1.5rem;
-    }
-    h2 {
-        font-size: 1.4rem;
-    }
-    h3 {
-        font-size: 1.3rem;
-    }
-    h4 {
-        font-size: 1.3rem;
-    }
-    p {
-        font-size: 1.2rem;
-    }
-    li {
-        font-size: 1.2rem;
-    }
-}
-
-a:link {
-    color: rgb(38, 38, 154);
-    text-decoration: none;
-}
-a:visited {
-    color: rgb(38, 38, 154);
-    text-decoration: none;
-}
-a:hover {
-    color: rgb(38, 38, 154);
-    text-decoration: underline;
-}
-a:active {
-    color:  rgb(38, 38, 154);
-    text-decoration: none;
-}
-
-ul {
-    padding-left: 1.1em;
-}
-li {
-    list-style: disc; 
-    margin: .5em 0 0 0;
-    padding: 0 0 0 0.15em;
-}
-
-@media (min-width: 500px) {    
-    ul {
-        padding-left: 1.25em;
-    }
-    li {
-        padding: 0 0 0 0.15em;
-    }
-}
-
 .clear-both {
     clear: both;
 }
@@ -122,11 +5,9 @@ li {
 .text-centre {
     text-align: center;
 }
-
 .text-left {
     text-align: left;
 }
-
 .text-right {
     text-align: right;
 }
@@ -145,30 +26,7 @@ li {
     width: 90%;
 }
 
-.float-image-left {
-    float: left;
-    margin: 0.3em 1em 0.25em 0;
-    border: 1px solid black;
-    padding: 0;
-}
-
-.float-image-right {
-    float: right;
-    margin: 0.3em 0 0.25em 1em;
-    border: 1px solid black;
-    padding: 0;
-}
-
-.image-center {
-    clear: both;
-    display: block;
-    text-align: center;
-    margin: 0.3em auto 0.25em auto;
-    border: 1px solid black;
-    padding: 0;
-    line-height: 1.5;
-}
-
+.maxwidth-05 { max-width: 5%}
 .maxwidth-10 { max-width: 10%}
 .maxwidth-15 { max-width: 15%}
 .maxwidth-20 { max-width: 20%}
@@ -188,6 +46,7 @@ li {
 .maxwidth-90 { max-width: 90%}
 .maxwidth-95 { max-width: 95%}
 
+.minwidth-05 { min-width: 5%}
 .minwidth-10 { min-width: 10%}
 .minwidth-15 { min-width: 15%}
 .minwidth-20 { min-width: 20%}
@@ -251,9 +110,10 @@ li {
     }
 }
 
-/* ------------------------------------------------------------------------------ 
-    Header css - all css for the header needs to be here so it can be customised.
-   ------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------
+   To do with headers - only used in the 'header-body' include file. 
+   Keep this so
+   ------------------------------------------------------------------ */
 
 .header-image {
     position: relative;
@@ -332,11 +192,6 @@ li {
 }
 
 @media screen and (min-width: 500px) {
-    /* .header-title {
-        margin: 0.25em 0 0.25em 0;
-        font-size: 1.4rem;
-    } */
-
     .header-nav .header-nav-item{
         padding: 0 0.25em 0 0.25em;
         line-height: 1.25;
@@ -344,9 +199,10 @@ li {
     }
 }
 
-/* ------------------------------------------------------------------------------ 
-    Footer css - all css for the footer needs to be here so it can be customised.
-   ------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------
+   To do with footers - only used in the 'footer' include file. Keep
+   this so
+   ------------------------------------------------------------------ */
 
 .foot-text {
     width: 100%;
