@@ -12,12 +12,14 @@
 .categories .category-links p{
     margin: 0.1em 0 0 0;
     padding: 0;
+    line-height: 1.4;
 }
 
 @media screen and (min-width: 576px) {
     .categories .category-links p{
         margin: 0.2em 0 0 0;
         padding: 0;
+        line-height: 1.6;
     }
     }
 
@@ -25,5 +27,6 @@
     .categories .category-links p{
         margin: 0.3em 0 0 0;
         padding: 0;
+        line-height: 1.2;
     }
 }
