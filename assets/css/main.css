@@ -195,7 +195,8 @@
     flex-wrap: wrap;
     justify-content: center;
     margin: 0.0em 0.5em 0 0.5em;
-    border: 1px solid red;
+    border: 0;
+    /* border: 1px solid red; */
     padding: 0;
 }
 
@@ -215,7 +216,7 @@
 @media screen and (min-width: 576px) {
     .header01-nav {
         margin: 0.5em 0.5em 0 0.5em;
-        border: 1px solid green;
+        /* border: 1px solid green; */
     }
     .header01-nav .header01-nav-item{
         margin: 0.5em 0 0 0;
@@ -229,7 +230,7 @@
 @media screen and (min-width: 768px) {
     .header01-nav {
         margin: 0.0em 0.5em 0 0.5em;
-        border: 1px solid blue;
+        /* border: 1px solid blue; */
     }
     .header01-nav .header01-nav-item{
         margin: 0.4em 0 0 0;
