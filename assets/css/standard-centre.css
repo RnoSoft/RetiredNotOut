@@ -1,8 +1,3 @@
-/* ----------------------------------------------------------------------------
-   The css in this file is for the 'standard-centre' layout. 
-   IT MUST BE USED IN OTHER LAYOUTS, EVEN IF THIS MEANS THAT CSS IS DUPLICATED.
-   ---------------------------------------------------------------------------- */
-
 .standard-centre {
     margin: 0;
     border: 0;
@@ -31,18 +26,33 @@
     text-align: center;
 }
 
-.standard-centre p .img-landscape {
+.standard-centre .image-center-landscape {
+    clear: both;
+    display: block;
     text-align: center;
-    max-width: 60%;
-    height: auto;
-    margin: 0.3em 0 0.3em 0;
-    border: 1px solid black;
+    margin: 0.3em auto 0.25em auto;
+    border: 1px solid yellow;
+    padding: 0;
+    width: 90%;
 }
 
-.standard-centre p .img-portrait {
+.standard-centre .image-center-portrait {
+    clear: both;
+    display: block;
     text-align: center;
-    max-width: 30%;
-    height: auto;
-    margin: 0.3em 0 0.3em 0;
-    border: 1px solid black;
+    margin: 0.3em auto 0.25em auto;
+    border: 1px solid yellow;
+    padding: 0;
+    width: 60%;
+}
+
+@media screen and (min-width: 550px) {
+    .standard-centre .image-center-landscape {
+        width: 60%;
+        border: 1px solid blue;
+    }
+    .standard-centre .image-center-portrait {
+        width: 30%;
+        border: 1px solid blue;
+    }
 }

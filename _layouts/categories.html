@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+{% include header-html.html -%}
+<link rel="stylesheet" href="/assets/css/categories.css">
+</head>
+<body>
+<div class="container">      
+{% include header-body.html %}   
+
+<article class="article-area">
+<div class="categories">
+<main>
+    {{ page.content | markdownify }}
+    <div class="category-links">
+    {%- assign _none=true -%}
+    {%- if site.data.categories -%}
+    {%- assign _cats = site.data.categories | sort: "title" -%}
+    {%- for category in _cats %}
+        <p><a href="{{category.permalink}}">{{category.title}}</a></p>
+        {% assign _none=false -%}
+    {%- endfor -%}
+    {%- endif -%}
+    {%- if _none -%}
+        <p>No categories have been specified.</p>
+    {%- endif %}
+    </div>
+</main>
+</div>
+</article>
+
+{% include footer.html %}            
+</div>
+</body>
+</html>

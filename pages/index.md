@@ -1,0 +1,59 @@
+---
+layout: standard-left
+permalink: /index
+menu_name: About
+type: index
+title: Paul Chappell's Website
+description: The page gives an overview of what Paul Chappell's website/blog is all about.
+---
+# About This Website
+
+![Paul Chappell]
+
+This is the personal website of Paul Chappell. I'm a 69-year-old retired computer programmer, living in West Yorkshire, England. 
+
+I'll be writing about anything that interests me, absolutely anything (except programming, which I'll write about [here](https://jekyllwebsites.retirednotout.uk), I don't want to put people off!). However, my main interests are as follows. These are the subjects I'll be writing about most.
+
+### Photography
+
+I've been a keen photographer all my life.
+
+It all started when I was at university in the mid-seventies. In those days there were no digital cameras, it was all film. In my study, I have a large box of slides and prints. I’m hoping to digitise some of them, in order to show them on this website (though there are issues doing this, see [this web page](/photography/digitising-old-slides-negatives-and-prints).
+
+In 2007 I bought a digital SLR (a Canon EOS400D). It’s getting very old now, but it still works. I'm hoping to replace it later this year. I also use my mobile phone. For photo editing I use [Gimp](https://www.gimp.org/), it's open source and free. 
+
+I'll be publishing a lot of my photographs on this website. *You are not allowed to use any of them without my written permission, see my [copyright page](/copyright) for further information.*
+
+![Paul Chappell at Edge Hill Station in 1977]
+
+The photograph of me on the right was taken by my friend John Buckley at Edge Hill railway station, in 1977.
+
+### Science and Technology
+
+I've always been interested in science, maths and engineering. 
+
+Back in the early/mid-seventies I did a civil engineering degree. I never became a civil engineer; I decided computer programming was much more interesting. The one thing I did learn on the course was how buildings are designed and built. For some reason, I've always loved big bridges.
+
+The course taught me a lot about maths, most of it I've forgotten, but I really liked maths (well, someone has to).
+
+I may write about computers and the internet on this website, but not about programming (I don't want to put people off). I've another website dedicated to programming websites, it's [here](http://jekyllwebsites.retirednotout.uk/).
+
+### Travel
+
+I've been lucky to travel abroad a lot in the past, but nowadays its mostly local. Around West Yorkshire and Merseyside. I'll be writing about my travels.
+
+I've been a member of the [Campaign for Real Ale](https://camra.org.uk/) for over 50 years! I'll be writing about some of the more interesting pubs I visit. Like the [Ship and Mitre](https://theshipandmitre.uk/) Liverpool, one of my favourites.
+
+## Website Layout
+
+This website is still under development, at this point in time I have no idea of what its final form will be. One of the reasons I'm writing it, is to learn more about the design and programming of small websites. As I learn more, the layout of the website will almost certainly change. I'll be writing about this on another website, [located here](http://jekyllwebsites.retirednotout.uk/).
+
+This layout is article based. The [articles](/articles) page lists all the articles I have written. Each one has one or more categories, which are listed on the [categories](/categories) page. Clicking a category on the categories page displays a page listing all the articles for that category.
+
+<br/>
+30th April 2024
+
+[Paul Chappell]: /content/index/paul.jpg 
+{: .float-image-left}
+[Paul Chappell at Edge Hill Station in 1977]: /content/index/paul-edge-hill.jpg 
+{: .float-image-right}

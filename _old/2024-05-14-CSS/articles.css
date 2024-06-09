@@ -1,0 +1,29 @@
+/* ----------------------------------------------------------------------------
+   The css in this file is for the 'articles' layout. 
+   IT MUST BE USED IN OTHER LAYOUTS, EVEN IF THIS MEANS THAT CSS IS DUPLICATED.
+   ---------------------------------------------------------------------------- */
+
+.articles {
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
+.articles .article-links p{
+    margin: 0.1em 0 0 0;
+    padding: 0;
+}
+
+@media screen and (min-width: 576px) {
+    .articles .article-links p{
+        margin: 0.2em 0 0 0;
+        padding: 0;
+    }
+    }
+
+@media screen and (min-width: 768px) {
+    .articles .article-links p{
+        margin: 0.3em 0 0 0;
+        padding: 0;
+    }
+}

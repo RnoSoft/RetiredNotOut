@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+{% include header-html.html -%}
+<link rel="stylesheet" href="/assets/css/post-tags.css">
+</head>
+<body>
+<div class="container"> 
+{% include header-body.html %}   
+
+<article class="article-area">
+<div class="post-tags">
+<main>
+    {{ page.content | markdownify }}
+
+    <nav class="post-tags-nav">
+    {%- assign _tagpages = site.pages | where: "type", "blog-tag" | sort: "tag" %}
+    {% for tag in _tagpages %}
+        {% if tag.autogen %}
+            {% continue %}
+        {% endif %} 
+        <a href={{tag.dir}}>
+            <p>{{tag.tag}}</p>
+        </a>
+    {% endfor %}
+    </nav>
+
+</main>
+</div>
+</article>
+
+{% include footer.html %}            
+</div>
+</body>
+</html>

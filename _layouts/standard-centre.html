@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+{% include header-html.html -%}
+<link rel="stylesheet" href="/assets/css/standard-centre.css">
+</head>
+<body>
+<div class="container">      
+{% include header-body.html %}   
+
+<article class="article-area">
+<div class="standard-centre">
+<main>
+    {{ page.content | markdownify }}
+</main>
+</div>
+</article>
+
+{% include footer.html %}            
+</div>
+</body>
+</html>

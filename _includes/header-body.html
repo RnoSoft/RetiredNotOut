@@ -1,0 +1,12 @@
+<header class="header-area">
+    <div class="header01-image">
+        <img src="/content/headers/header.jpg" alt="Header photo for retired not out"/> 
+        <p class="header01-image-bc"><a href="/">{{site.title}}</a></p>
+    </div>
+    <nav class="header01-nav">
+        {% for menu in site.data.menu-top %}
+            <p class="header01-nav-item {%- if page.menu_name == menu.name %} header01-nav-cur{%- endif -%}"><a href="{{menu.permalink}}">{{menu.name}}</a></p>
+        {% endfor %}
+    </nav>  
+</header>  
+<div class="clear-both"></div>
