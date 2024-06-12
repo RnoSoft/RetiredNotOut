@@ -24,35 +24,68 @@
 }
 .standard-centre p {
     text-align: center;
+    margin-left: 1%;
+    margin-right: 1%;
 }
 
-.standard-centre .image-center-landscape {
+.standard-centre p .image-center-landscape {
     clear: both;
     display: block;
     text-align: center;
     margin: 0.3em auto 0.25em auto;
-    border: 1px solid black;
+    border: 1px solid yellow;
     padding: 0;
-    width: 90%;
+    width: 100%;
 }
 
-.standard-centre .image-center-portrait {
+.standard-centre p .image-center-portrait {
     clear: both;
     display: block;
     text-align: center;
     margin: 0.3em auto 0.25em auto;
-    border: 1px solid black;
+    border: 1px solid blue;
     padding: 0;
-    width: 60%;
+    width: 50%;
 }
 
-@media screen and (min-width: 550px) {
-    .standard-centre .image-center-landscape {
-        width: 60%;
-        border: 1px solid black;
+@media screen and (min-width: 650px) {
+    .standard-centre p {
+        margin-left: 10%;
+        margin-right: 10%;
     }
-    .standard-centre .image-center-portrait {
-        width: 30%;
-        border: 1px solid black;
+    .standard-centre p .image-center-landscape {
+        width: 90%;
+        border: 1px solid blue;
+    }
+    .standard-centre p .image-center-portrait {
+        width: 45%;
+        border: 1px solid blue;
+    }
+}
+
+/* --------------------------------------------------------------------------- */
+
+.daily-photo-link {
+    margin: 0.6em 0 0.6em 0;
+    border: 0;
+    padding: 0;
+}
+
+.daily-photo-bottom {
+    margin: 1.5em 0 0 0;
+    padding: 0;
+    width: 100%;
+}
+
+.daily-photo-bottom > p {    
+    margin: 0.6em 0 0 0;
+    line-height: 1.0;
+}
+@media screen and (min-width: 550px) {
+    .daily-photo-bottom {
+        margin: 1.5em 0 0 0;
+    }    
+    .daily-photo-bottom > p {   
+        margin: 0.5em 0 0 0; 
     }
 }
