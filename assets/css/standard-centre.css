@@ -33,7 +33,7 @@
     display: block;
     text-align: center;
     margin: 0.3em auto 0.25em auto;
-    border: 1px solid yellow;
+    border: 1px solid black;
     padding: 0;
     width: 100%;
 }
@@ -43,7 +43,7 @@
     display: block;
     text-align: center;
     margin: 0.3em auto 0.25em auto;
-    border: 1px solid blue;
+    border: 1px solid black;
     padding: 0;
     width: 50%;
 }
@@ -55,11 +55,11 @@
     }
     .standard-centre p .image-center-landscape {
         width: 90%;
-        border: 1px solid blue;
+        border: 1px solid black;
     }
     .standard-centre p .image-center-portrait {
         width: 45%;
-        border: 1px solid blue;
+        border: 1px solid black;
     }
 }
 

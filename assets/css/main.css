@@ -128,7 +128,7 @@
 
 .header01-image img {
     width:100%;
-    border: 1px solid yellow;
+    border: 1px solid black;
 }
 
 .header01-image .header01-image-bc {
@@ -169,7 +169,7 @@
     }
     .header01-image img {
         width:100%;
-        border: 1px solid blue;
+        border: 1px solid black;
     }
 }
 
@@ -180,7 +180,6 @@
     justify-content: center;
     margin: 0.0em 0.5em 0 0.5em;
     border: 0;
-    /* border: 1px solid red; */
     padding: 0;
 }
 
@@ -200,7 +199,6 @@
 @media screen and (min-width: 550px) {
     .header01-nav {
         margin: 0.0em 0.5em 0 0.5em;
-        /* border: 1px solid blue; */
     }
     .header01-nav .header01-nav-item{
         margin: 0.4em 0 0 0;
