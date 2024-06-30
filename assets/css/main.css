@@ -173,6 +173,13 @@
     }
 }
 
+.header01-image-by {
+    text-align: right;
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
 
 .header01-nav {
     display: flex;
