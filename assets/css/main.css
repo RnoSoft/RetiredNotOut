@@ -133,13 +133,13 @@
 
 .header01-image .header01-image-bc {
     position: absolute;
-    bottom: 12px;
+    bottom: 4px;
     left: 50%;
     transform: translate(-50%, 0%);
 }
 
 .header01-image p {
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     font-weight: bold;
     line-height: 1;
 }
@@ -162,7 +162,7 @@
 
 @media screen and (min-width: 550px) {
     .header01-image .header01-image-bc {
-        bottom: 20px;
+        bottom: 8px;
     }
     .header01-image p {
         font-size: 2.0rem;
