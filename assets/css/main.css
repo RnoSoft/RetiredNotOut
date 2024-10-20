@@ -216,7 +216,7 @@
     border: 0px solid black;
     padding: 0;
     line-height: 1.2;
-    font-size: 1.2rem;
+    /* font-size: 1.2rem; */
 }
 
 .header01-nav  .header01-nav-cur {
@@ -234,24 +234,24 @@
         border: 0px solid black;
         padding: 0;
         line-height: 1.0;
-        font-size: 1.3rem;
+        /* font-size: 1.3rem; */
     }
 }
 
-@media screen and (min-width: 625px) {
+/* @media screen and (min-width: 625px) {
     .header01-nav {
         margin: 0.4em 0 0 0;
-        border: 0px solid orange;
+        border: 1x solid orange;
         padding: 0;
     }
     .header01-nav .header01-nav-item{
         margin: 0 0.25em 0 0.25em;
-        border: 0px solid black;
+        border: 1px solid black;
         padding: 0;
         line-height: 1;
         font-size: 1.4rem;
     }
-}
+} */
 
 /* ------------------------------------------------------------------
    To do with footers - only used in the 'footer' include file. Keep
