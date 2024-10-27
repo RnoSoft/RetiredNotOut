@@ -1,0 +1,12 @@
+<div class="clear-both"></div>
+<footer class="footer-area">
+    <div class="foot-text">
+        <p class="foot-text-left">Copyright © 2024 Paul Chappell. All Rights Reserved</p>
+        <p class="foot-text-right">Built With <a href="https://jekyllrb.com/">Jekyll</a>; Hosted By <a href="https://pages.github.com/">GitHub Pages</a></p>
+    </div>
+    <nav class="foot-nav">
+        {% for menu in site.data.menu-bottom %}
+            <p class="foot-nav-item {%- if page.menu_name == menu.name %} foot-nav-cur{%- endif -%}"><a href="{{menu.permalink}}">{{menu.name}}</a></p>
+        {% endfor %}
+    </nav>  
+</footer>

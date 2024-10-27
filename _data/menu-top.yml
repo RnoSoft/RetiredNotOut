@@ -1,0 +1,20 @@
+- name: About
+  permalink: /
+
+- name: Copyright
+  permalink: /copyright
+
+- name: Categories
+  permalink: /categories/
+
+- name: Articles
+  permalink: /articles/
+
+- name: Blog
+  permalink: /blog/
+
+- name: Tags
+  permalink: /blog/tags/
+
+- name: Daily-Photograph
+  permalink: /blog/daily-photograph

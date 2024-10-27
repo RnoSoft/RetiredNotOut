@@ -1,0 +1,21 @@
+.categories {
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
+.categories .category-links p {
+    margin: 0.75em 0 0 0;
+    border: 0;
+    padding: 0;
+    line-height: 1;
+}
+
+@media screen and (min-width: 550px) {
+    .categories .category-links p{
+        margin: 0.75em 0 0 0;
+        border: 0;
+        padding: 0;
+        line-height: 1;
+    }
+}

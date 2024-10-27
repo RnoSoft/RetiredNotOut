@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+{% include header-html.html %}
+<link rel="stylesheet" href="/assets/css/standard-centre.css">
+</head>
+<body>
+<div class="container">   
+{% include header-body.html %} 
+
+<article class="article-area">
+<div class="standard-centre">
+<main>
+    <h1>{{page.postTitle}}</h1>
+
+    <p class="daily-photo-link">
+        {%- if page.previousDailyPhoto -%}
+            <a href="/blog/daily-photo-{{page.previousDailyPhoto}}">Previous</a>      
+            {%- assign _addSep = true -%}
+        {%- else -%}
+            {%- assign _addSep = false -%}
+        {%- endif -%}
+        {%- if page.nextDailyPhoto -%}
+            {%- if _addSep -%}
+                <a href="/blog/daily-photo-{{page.nextDailyPhoto}}">; Next</a>
+            {%- else -%}
+                <a href="/blog/daily-photo-{{page.nextDailyPhoto}}">Next</a>
+            {%- endif -%}
+        {%- endif -%}
+    </p>
+
+    {{ page.content | markdownify }}
+    
+    <section class="daily-photo-bottom">
+    {% if page.tags.size > 0 %}
+       <p> Tags:&nbsp;        
+            {%- assign _first = true -%}
+            {%- for tag in page.tags -%}
+                {%- if _first -%}
+                    {%- assign _first = false -%}
+                    <a href="/blog/tags/{{tag | downcase}}/">{{tag}}</a>
+                {%- else -%}
+                    ,&nbsp;<a href="/blog/tags/{{tag | downcase}}/">{{tag}}</a>
+                {%- endif -%}
+            {%- endfor -%}
+        </p>
+    {% endif %}
+    {% if page.author %}
+    <p>Author: {{page.author | strip}}</p>
+    {%- endif -%}
+    <p>Published: {{page.date | date: "%-d %B %Y"}}</p>
+    {% if page.modified -%}
+    <p>Last modified: {{page.modified | date: "%-d %B %Y"}}</p>
+    {%- endif -%}
+    </section>
+</main>
+</div>
+</article>
+
+{% include footer.html %}            
+</div>
+</body>
+</html>

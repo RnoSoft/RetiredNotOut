@@ -1,0 +1,24 @@
+<header class="header-area">
+    {% assign _hdr="header.jpg" %}
+    {% if page.header-image %}
+        {% assign _hdr=page.header-image %}
+    {% endif %}
+    <p class="provisional-header">Under Development, Especially the Photographs</p>
+    <div class="header01-image">
+        <img src="/content/headers/{{_hdr}}" alt="Header photo for retired not out"/> 
+        <p class="header01-image-bc"><a href="/">{{site.title}}</a></p>
+    </div>
+
+    {% if page.header-image-by %}
+        <div class="header01-image-by">
+            {{page.header-image-by | markdownify}}
+        </div>
+    {% endif %}
+
+    <nav class="header01-nav">
+        {% for menu in site.data.menu-top %}
+            <p class="header01-nav-item {%- if page.menu_name == menu.name %} header01-nav-cur{%- endif -%}"><a href="{{menu.permalink}}">{{menu.name}}</a></p>
+        {% endfor %}
+    </nav>  
+</header>  
+<div class="clear-both"></div>

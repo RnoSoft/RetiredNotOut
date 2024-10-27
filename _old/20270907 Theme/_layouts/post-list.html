@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+{% include header-html.html %}
+<link rel="stylesheet" href="/assets/css/post-list.css">
+</head>
+<body>
+<div class="container">
+{% include header-body.html %}   
+
+<article class="article-area">
+<div class="post-list">
+<main>
+  {{page.content | markdownify}}
+   
+  {%-if paginator.total_posts > 0-%}
+
+    {%-assign _pagecount = paginator.total_pages-%}
+    {%-assign _firstpage = true-%}
+    {%-for _post in paginator.posts%}
+
+      {%if _firstpage-%}
+      {%-assign _firstpage = false-%}
+      <div class="posts-first-summary">
+      {%-else-%}
+      <div class="posts-subsequent-summary">
+      {%-endif%}
+
+      <h3>{{_post.summary-title}}</h3>
+      {%-case _post.summary-type -%}
+        <!-- {%- when "single-photo" -%}
+          <div class="posts-summary-photo">
+            <div class = "image">
+              <p><img src="{{_post.summary-photo-image}}" alt="{{_post.summary-photo-alt}}" /></p>
+            </div>
+            <div class = "text">
+              {{_post.summary-body | markdownify}}
+            </div>
+          </div>     -->
+        {%- else -%}
+          <div class="posts-summary-basic">
+            {{_post.summary-body | markdownify}}
+          </div>
+      {%-endcase%}
+        
+      <div class="posts-summary-bottom">
+         <p>{{_post.date | date: "%-d %B %Y"}}</p>
+        <p><a href="{{_post.permalink}}">Read More</a></p>
+      </div>
+
+      </div>
+
+    {%- endfor -%} 
+
+    {%- if _pagecount > 1 -%} 
+      <div class="posts-subsequent-summary"></div>
+      <nav class="posts-pages-nav">
+      <p>
+        {% if paginator.total_pages > 1 %}
+            {% for trail in paginator.page_trail %}
+            {% assign _size = trail.path | size | minus: 10 %}
+            {% assign _path = trail.path | truncate: _size, "" %}
+            <a class="posts-pages-nav-item{% if page.dir == _path %} posts-pages-nav-item-cur{% endif %}" href="{{_path}}">{{trail.num}}</a>
+            {% endfor %}
+        {% endif %}
+      </p>
+      </nav>
+    {%-endif-%}
+
+  {%-else%} 
+
+    <p>No posts have been written yet.</p>
+     
+  {%-endif%}
+</main>
+</div>
+</article>
+
+{% include footer.html %}            
+</div>
+</body>
+</html>

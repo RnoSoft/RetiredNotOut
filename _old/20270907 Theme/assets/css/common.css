@@ -28,52 +28,25 @@ body * + * {
 }
 
 h1 {
-    font-size: 1.5rem;
-}
-h2 {
     font-size: 1.3rem;
 }
-h3 {
+h2 {
     font-size: 1.2rem;
+}
+h3 {
+    font-size: 1.0rem;
 }
 h4 {
-    font-size: 1.2rem;
+    font-size: 1.0rem;
 }
 p {
-    font-size: 1.2rem;
+    font-size: 1.0rem;
 }
 li {
-    font-size: 1.2rem;
+    font-size: 1.0rem;
 }
 
-@media screen and (min-width: 480px) {
-    body {
-        line-height: 1.4;
-    }
-    body * + * {
-        margin-top: 0.9em;
-    } 
-    h1 {
-        font-size: 1.7em;
-    }
-    h2 {
-        font-size: 1.5rem;
-    }
-    h3 {
-        font-size: 1.35rem;
-    }
-    h4 {
-        font-size: 1.35rem;
-    }
-    p {
-        font-size: 1.35rem;
-    }
-    li {
-        font-size: 1.35rem;
-    }
-}
-
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 550px) {
     body {
         line-height: 1.5;
     }
@@ -83,22 +56,22 @@ li {
     } 
 
     h1 {
-        font-size: 1.9em;
-    }
-    h2 {
         font-size: 1.7rem;
     }
+    h2 {
+        font-size: 1.6rem;
+    }
     h3 {
-        font-size: 1.5rem;
+        font-size: 1.3rem;
     }
     h4 {
-        font-size: 1.5rem;
+        font-size: 1.3rem;
     }
     p {
-        font-size: 1.5rem;
+        font-size: 1.3rem;
     }
     li {
-        font-size: 1.5rem;
+        font-size: 1.3rem;
     }
 }
 
@@ -128,36 +101,22 @@ li {
     padding: 0 0 0 0.15em;
 }
 
-@media screen and (min-width: 480px) {    
-    ul {
-        padding-left: 1.25em;
-    }
-}
-
-@media screen and (min-width: 768px) {    
+@media screen and (min-width: 550px) {    
     ul {
         padding-left: 1.4em;
+    }
+    li {
+        padding: 0 0 0 0.15em;
     }
 }
 
 
 .provisional-header {
-    color: blue;
+    color: red;
     text-align: center;
     font-weight: bold;
-    font-size: 1.0rem;
 }
-
-@media screen and (min-width: 480px) {    
-    .provisional-header {
-        color: green;
-        font-size: 1.15rem;
-    }
-}
-
-@media screen and (min-width: 768px) {     
-    .provisional-header {
-        color: red;
-        font-size: 1.3rem;
-    }
+.provisional {
+    color: red;
+    font-weight: bold;
 }

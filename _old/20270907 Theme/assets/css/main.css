@@ -95,23 +95,12 @@
 
 .container .footer-area {
     flex: 0 0 auto;
-    margin: 2.0em 0 0 0;
+    margin: 1.0em 0 0 0;
     padding: 0;
     width: 100%;
 }
 
-@media screen and (min-width: 480px) {
-    .container {
-        margin: 0.3em;
-    }
-    .container .article-area {
-        margin: 0.25em 0 0 0;
-        border: 0;
-        padding: 0;
-    }
-}
-
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 550px) {
     .container {
         margin: 0.4em;
     }
@@ -121,6 +110,7 @@
         padding: 0;
     }
 }
+
 /* -------------------------------------------------------------------------
    To do with type 01 headers - only used in the 'header-body' include file. 
    Keep this so. The number will increase as other types of header are 
@@ -158,13 +148,13 @@
     line-height: 1;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 500px) {
     .header01-image .header01-image-bc {
         bottom: 8px;
         font-size: 20px;
     }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 700px) {
     .header01-image .header01-image-bc {
         bottom: 10px;
         font-size: 25px;
@@ -193,17 +183,7 @@
     text-decoration: none;
 } 
 
-@media screen and (min-width: 480px) {
-    .header01-image p {
-        font-size: 1.75rem;
-    }
-    .header01-image img {
-        width:100%;
-        border: 1px solid black;
-    }
-}
-
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 550px) {
     .header01-image p {
         font-size: 2.0rem;
     }
@@ -226,44 +206,51 @@
     flex-wrap: wrap;
     justify-content: center;
     margin: 0.4em 0 0 0;
-    border: 0px solid blue;
+    border: 0px solid red;
+    padding: 0;
 }
 
 .header01-nav .header01-nav-item {
     flex: 0 0 auto;
     margin: 0 0.15em 0 0.15em;
-    border: 0;
+    border: 0px solid black;
     padding: 0;
     line-height: 1.2;
-    /* font-size: 1.2rem; */
-}
-
-@media screen and (min-width: 480px) {
-    .header01-nav {
-        margin: 0.4em 0 0 0;
-        border: 0px solid green;
-    }
-    .header01-nav .header01-nav-item{
-        margin: 0 0.25em 0 0.25em;
-        line-height: 1.1;
-        /* font-size: 1.3rem;  */
-    }
-}
-
-@media screen and (min-width: 768px) {
-    .header01-nav {
-        margin: 0.4em 0 0 0;
-        border: 0px solid red;
-    }
-    .header01-nav .header01-nav-item{
-        margin: 0 0.25em 0 0.25em;
-        line-height: 1;
-        /* font-size: 1.4rem; */
-    }
+    font-size: 1.2rem;
 }
 
 .header01-nav  .header01-nav-cur {
     font-weight: bold;
+}
+
+@media screen and (min-width: 550px) {
+    .header01-nav {
+        margin: 0.4em 0 0 0;
+        border: 0px solid blue;
+        padding: 0;
+    }
+    .header01-nav .header01-nav-item{
+        margin: 0 0.25em 0 0.25em;
+        border: 0px solid black;
+        padding: 0;
+        line-height: 1.0;
+        font-size: 1.3rem;
+    }
+}
+
+@media screen and (min-width: 625px) {
+    .header01-nav {
+        margin: 0.4em 0 0 0;
+        border: 0px solid orange;
+        padding: 0;
+    }
+    .header01-nav .header01-nav-item{
+        margin: 0 0.25em 0 0.25em;
+        border: 0px solid black;
+        padding: 0;
+        line-height: 1;
+        font-size: 1.4rem;
+    }
 }
 
 /* ------------------------------------------------------------------
@@ -283,7 +270,7 @@
     margin: 0.5em 0 0.5em 0;
     border: 10;
     padding: 0;
-    font-size: 1.0rem;
+    font-size: 0.9rem;
 }
 
 .foot-text > .foot-text-left {
@@ -297,23 +284,9 @@
     line-height: 1;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 550px) {
     .foot-text > p {
         font-size: 1.15rem;
-    }    
-    .foot-text > .foot-text-left {
-        float: left;
-        text-align: left;
-        }
-    .foot-text > .foot-text-right{
-        float: right;
-        text-align: right;
-    }
-}
-
-@media screen and (min-width: 768px) {
-    .foot-text > p {
-        font-size: 1.3rem;
     }    
     .foot-text > .foot-text-left {
         float: left;
@@ -336,42 +309,18 @@
 .foot-nav .foot-nav-item {
     flex: 0 0 auto; 
     margin: 0;
-    padding: 0 0.25em 0 0.25em;
+    padding: 0 0.35em 0 0.35em;
     line-height: 1.4;
-}
-
-.foot-nav .foot-nav-item p {
-    font-size: 1.1rem;
 }
 
 .foot-nav .foot-nav-cur {
     font-weight: bold;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 550px) {
     .foot-nav {
         margin-top: 0em;
         margin-bottom: 0.25em;
-    }
-
-    .foot-nav .foot-nav-item p {
-        font-size: 1.25rem;
-    }
-    
-    .foot-nav .foot-nav-item {
-        padding: 0 0.25em 0 0.25em;
-        line-height: 1.6;
-    }
-}
-
-@media screen and (min-width: 768px) {
-    .foot-nav {
-        margin-top: 0em;
-        margin-bottom: 0.25em;
-    }
-
-    .foot-nav .foot-nav-item p {
-        font-size: 1.4rem;
     }
 
     .foot-nav .foot-nav-item {
