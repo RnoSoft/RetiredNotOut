@@ -1,23 +1,30 @@
----
-layout: null
-no_index: true;
----
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-    {%- assign _pages = site.pages | concat: site.posts | sort: "url" -%}
-    {%- for page in _pages -%}
-        {%- include set-no-index.html -%}
-        {%- if _no_index -%}
-            {%- continue -%}
-        {%- endif -%}
-        {%- if page.no_index -%}
-            {%- continue -%}
-        {%- endif -%}
-        {%- if page.url == "/index" -%}
-            {%- assign _url = "" -%}
-        {%- else -%}
-            {%- assign _url = page.url -%}
-        {%- endif %}
-        <url><loc>https://retirednotout.uk{{_url}}</loc></url>
-    {%- endfor %}
+        <url><loc>https://retirednotout.uk/blog/a few-days-exploring-amiens-august-2009</loc></url>
+        <url><loc>https://retirednotout.uk/blog/daily-photo-2024-10-01</loc></url>
+        <url><loc>https://retirednotout.uk/blog/daily-photo-2024-10-02</loc></url>
+        <url><loc>https://retirednotout.uk/blog/daily-photo-2024-10-03</loc></url>
+        <url><loc>https://retirednotout.uk/blog/daily-photo-2024-10-04</loc></url>
+        <url><loc>https://retirednotout.uk/blog/daily-photo-2024-10-05</loc></url>
+        <url><loc>https://retirednotout.uk/blog/daily-photo-2024-10-06</loc></url>
+        <url><loc>https://retirednotout.uk/blog/daily-photograph</loc></url>
+        <url><loc>https://retirednotout.uk/blog/liverpool-llandudno-25-june-2024-on-the-waverley-paddle-steamer</loc></url>
+        <url><loc>https://retirednotout.uk/blog/marsden-winter-snow-2009-2010</loc></url>
+        <url><loc>https://retirednotout.uk/blog/misty-day-in-marsden-late-october-2024</loc></url>
+        <url><loc>https://retirednotout.uk/blog/omaha-beach-normandy</loc></url>
+        <url><loc>https://retirednotout.uk/family/a-drive-to-the-coast-near-rouen</loc></url>
+        <url><loc>https://retirednotout.uk/family/a-family-holiday-in-kirkcudbright</loc></url>
+        <url><loc>https://retirednotout.uk/family/a-night-in-amiens</loc></url>
+        <url><loc>https://retirednotout.uk/family/a-train-ride-on-the-east-lancs-railway</loc></url>
+        <url><loc>https://retirednotout.uk/family/a-trip-along-the-wirral-coast</loc></url>
+        <url><loc>https://retirednotout.uk/family/a-trip-to-oostende-pier</loc></url>
+        <url><loc>https://retirednotout.uk/family/a-week-in-brugge</loc></url>
+        <url><loc>https://retirednotout.uk/family/garlieston-harbour-scotland-2022</loc></url>
+        <url><loc>https://retirednotout.uk/family/isle-of-whithorn-harbour-scotland-2022</loc></url>
+        <url><loc>https://retirednotout.uk/family/kirkcudbright-harbour-scotland-2022</loc></url>
+        <url><loc>https://retirednotout.uk/family/trips-2007-to-2012</loc></url>
+        <url><loc>https://retirednotout.uk/family/two-days-in-rouen</loc></url>
+        <url><loc>https://retirednotout.uk/family/world-war-two-day-haworth</loc></url>
+        <url><loc>https://retirednotout.uk</loc></url>
+        <url><loc>https://retirednotout.uk/photography/digitising-old-slides-negatives-and-prints</loc></url>
 </urlset>
