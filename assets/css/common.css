@@ -166,22 +166,22 @@ li {
 .header-plain{
     text-align: center;
     font-weight: bold;
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     margin: 0;
     border: 0;
     border-bottom: 1px solid rgb(200, 200, 200);
     padding: 0;
-    padding-bottom: 0.5em;
+    padding-bottom: 0;
 }
 
 @media screen and (min-width: 480px) {    
     .header-plain {
-        font-size: 1.45rem;
+        font-size: 1.25rem;
     }
 }
 
 @media screen and (min-width: 768px) {     
     .header-plain {
-        font-size: 1.6rem;
+        font-size: 1.4rem;
     }
 }
