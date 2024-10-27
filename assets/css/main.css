@@ -221,7 +221,7 @@
 }
 
 
-.header01-nav {
+.header01-nav-photo {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -229,7 +229,7 @@
     border: 0px solid blue;
 }
 
-.header01-nav .header01-nav-item {
+.header01-nav-photo .header01-nav-item {
     flex: 0 0 auto;
     margin: 0 0.15em 0 0.15em;
     border: 0;
@@ -239,11 +239,11 @@
 }
 
 @media screen and (min-width: 480px) {
-    .header01-nav {
+    .header01-nav-photo {
         margin: 0.4em 0 0 0;
         border: 0px solid green;
     }
-    .header01-nav .header01-nav-item{
+    .header01-nav-photo .header01-nav-item{
         margin: 0 0.25em 0 0.25em;
         line-height: 1.1;
         /* font-size: 1.3rem;  */
@@ -251,21 +251,66 @@
 }
 
 @media screen and (min-width: 768px) {
-    .header01-nav {
+    .header01-nav-photo {
         margin: 0.4em 0 0 0;
         border: 0px solid red;
     }
-    .header01-nav .header01-nav-item{
+    .header01-nav-photo .header01-nav-item{
         margin: 0 0.25em 0 0.25em;
         line-height: 1;
         /* font-size: 1.4rem; */
     }
 }
 
-.header01-nav  .header01-nav-cur {
+.header01-nav-photo  .header01-nav-cur {
     font-weight: bold;
 }
 
+
+.header01-nav-plain {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0.4em 0 0 0;
+    border: 0px solid blue;
+}
+
+.header01-nav-plain .header01-nav-item {
+    flex: 0 0 auto;
+    margin: 0 0.15em 0 0.15em;
+    border: 0;
+    padding: 0;
+    line-height: 1.2;
+    /* font-size: 1.2rem; */
+}
+
+@media screen and (min-width: 480px) {
+    .header01-nav-plain {
+        margin: 0.4em 0 0 0;
+        border: 0px solid green;
+    }
+    .header01-nav-plain .header01-nav-item{
+        margin: 0 0.25em 0 0.25em;
+        line-height: 1.1;
+        /* font-size: 1.3rem;  */
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .header01-nav-plain {
+        margin: 0.4em 0 0 0;
+        border: 0px solid red;
+    }
+    .header01-nav-plain.header01-nav-item{
+        margin: 0 0.25em 0 0.25em;
+        line-height: 1;
+        /* font-size: 1.4rem; */
+    }
+}
+
+.header01-nav-plain  .header01-nav-cur {
+    font-weight: bold;
+}
 /* ------------------------------------------------------------------
    To do with footers - only used in the 'footer' include file. Keep
    this so
