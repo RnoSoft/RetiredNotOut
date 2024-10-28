@@ -85,12 +85,13 @@
 
 .daily-photo-bottom {
     margin: 1.5em 0 0 0;
+    border: 0;
     padding: 0;
     width: 100%;
 }
 
 .daily-photo-bottom > p {    
-    margin: 0.6em 0 0 0;
+    margin: 0.4em 0 0 0; 
     line-height: 1.0;
     font-size: 1.1rem;
 }
@@ -100,7 +101,7 @@
         margin: 1.5em 0 0 0;
     }    
     .daily-photo-bottom > p {   
-        margin: 0.5em 0 0 0; 
+        margin: 0.4em 0 0 0; 
         font-size: 1.25rem;
     }
 }
@@ -110,35 +111,55 @@
         margin: 1.5em 0 0 0;
     }    
     .daily-photo-bottom > p {   
-        margin: 0.5em 0 0 0; 
-        font-size: 1.35rem;
+        margin: 0.4em 0 0 0; 
+        font-size: 1.3rem;
     }
 }
 
 /* --------------------------------------------------------------------------- */
 
+.post-published {
+    font-size: 1.1rem;
+    margin: 0.2em 0 0 0;
+    border: 0;
+    padding: 0;
+}
+
+.post-bottom {
+    margin: 1.5em 0 0 0;
+    border: 0;
+    padding: 0;
+    width: 100%;
+}
+
 .post-bottom > p {    
-    margin: 0.6em 0 0 0;
+    margin: 0.4em 0 0 0; 
     line-height: 1.0;
     font-size: 1.1rem;
 }
 
 @media screen and (min-width: 480px) {
+    .post-published {
+        font-size: 1.25rem;
+    }
     .post-bottom {
         margin: 1.5em 0 0 0;
     }    
     .post-bottom > p {   
-        margin: 0.5em 0 0 0; 
+        margin: 0.4em 0 0 0; 
         font-size: 1.25rem;
     }
 }
 
-@media screen and (min-width: 768x) {
+@media screen and (min-width: 768px) {
+    .post-published {
+        font-size: 1.4rem;
+    }
     .post-bottom {
         margin: 1.5em 0 0 0;
     }    
     .post-bottom > p {   
-        margin: 0.5em 0 0 0; 
-        font-size: 1.35rem;
+        margin: 0.4em 0 0 0; 
+        font-size: 1.3rem;
     }
 }

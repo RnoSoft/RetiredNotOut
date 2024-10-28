@@ -24,7 +24,7 @@ body {
 
 /* Lobotomised Owl - this causes problems when leaflet is used for a map. */
 body * + * {
-    margin-top: 0.8em;
+    margin-top: 0.5em;
 }
 
 h1 {
@@ -51,7 +51,7 @@ li {
         line-height: 1.4;
     }
     body * + * {
-        margin-top: 0.9em;
+        margin-top: 0.6em;
     } 
     h1 {
         font-size: 1.7em;
@@ -79,7 +79,7 @@ li {
     }
 
     body * + * {
-        margin-top: 1.0em;
+        margin-top: 0.7em;
     } 
 
     h1 {
