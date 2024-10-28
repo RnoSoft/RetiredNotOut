@@ -234,8 +234,7 @@
     margin: 0 0.15em 0 0.15em;
     border: 0;
     padding: 0;
-    line-height: 1.2;
-    /* font-size: 1.2rem; */
+    line-height: 1.4;
 }
 
 @media screen and (min-width: 480px) {
@@ -245,8 +244,7 @@
     }
     .header01-nav-photo .header01-nav-item{
         margin: 0 0.25em 0 0.25em;
-        line-height: 1.1;
-        /* font-size: 1.3rem;  */
+        line-height: 1.3;
     }
 }
 
@@ -258,7 +256,6 @@
     .header01-nav-photo .header01-nav-item{
         margin: 0 0.25em 0 0.25em;
         line-height: 1;
-        /* font-size: 1.4rem; */
     }
 }
 

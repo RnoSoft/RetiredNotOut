@@ -24,7 +24,7 @@ body {
 
 /* Lobotomised Owl - this causes problems when leaflet is used for a map. */
 body * + * {
-    margin-top: 0.5em;
+    margin-top: 0.6em;
 }
 
 h1 {
