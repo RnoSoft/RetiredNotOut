@@ -12,19 +12,17 @@
 }
 
 body {
-    max-width: 1000px;
-    margin: 0 auto 0 auto;
+    margin: 0;
     border: 0;
     padding: 0;
     color: rgb(90, 90, 90);
-    background-color: rgb(250, 250, 250);
-    font-family: Calibri, Arial, Helvetica, sans-serif;
+    font-family: Aptos, Calibri, Arial, Helvetica, sans-serif;
     line-height: 1.3;
 }
 
 /* Lobotomised Owl - this causes problems when leaflet is used for a map. */
 body * + * {
-    margin-top: 0.6em;
+    margin-top: 0.5em;
 }
 
 h1 {
@@ -48,10 +46,10 @@ li {
 
 @media screen and (min-width: 480px) {
     body {
-        line-height: 1.4;
+        line-height: 1.3;
     }
     body * + * {
-        margin-top: 0.6em;
+        margin-top: 0.5em;
     } 
     h1 {
         font-size: 1.7em;
@@ -75,11 +73,11 @@ li {
 
 @media screen and (min-width: 768px) {
     body {
-        line-height: 1.5;
+        line-height: 1.4;
     }
 
     body * + * {
-        margin-top: 0.7em;
+        margin-top: 0.5em;
     } 
 
     h1 {
@@ -140,48 +138,212 @@ li {
     }
 }
 
+/* -------------------------------------------------------------------------------------- */
 
-.header-provisional {
-    color: blue;
-    text-align: center;
-    font-weight: bold;
-    font-size: 1.0rem;
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 98vh;
 }
 
-@media screen and (min-width: 480px) {    
-    .header-provisional {
-        color: green;
-        font-size: 1.15rem;
+.container .header-area {
+    flex: 0 0 auto;
+    margin: 0;
+    border: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.container .article-area {
+    flex: 1 0 auto;
+    max-width: 1000px;
+    margin: 0 auto 0 auto;
+    border: 0;
+    padding: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.container .footer-area {
+    flex: 0 0 auto;
+    margin: 0;
+    border: 0;
+    border-top: 1px solid black;
+    padding: 0;
+    background-color: rgb(230, 230, 230);
+    width: 100%;
+}
+
+@media screen and (min-width: 480px) {
+    .container {
+        margin: 0 0.3em 0 0.3em;
     }
 }
 
-@media screen and (min-width: 768px) {     
-    .header-provisional {
+@media screen and (min-width: 768px) {
+    .container {
+        margin: 0 0.4em 0 0.4em;
+    }
+}
+
+/* -------------------------------------------------------------------------------------- */
+
+.header-title {
+    margin: 0;
+    border: 0;
+    Border-bottom: 1px solid black;
+    padding:  0;
+    text-align: center;
+    background-color: rgb(240, 240, 240);
+}
+.header-title .provisional {
+    color: blue;
+    font-weight: bold;
+    font-size: 1.0rem;
+    margin: 0;
+    border: 0;
+    padding: 0.25em 0 0 0;
+}
+.header-title .title {
+    font-weight: bold;
+    font-size: 1.25rem;
+    line-height: 1;
+    margin: 0;
+    border: 0;
+    padding: 0.25em 0 0.5em 0;
+}
+@media screen and (min-width: 480px) {    
+    .header-title .provisional {
+        color: green;
+        font-size: 1.1rem;
+    }
+    .header-title .title {
+        font-size: 1.5rem;
+    }
+}
+@media screen and (min-width: 768px) {  
+    .header-title .provisional {
         color: red;
+        font-size: 1.2rem;
+    }
+    .header-title .title {
+        font-size: 1.75rem;
+    }
+}
+
+.header-nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0;
+    border: 0;
+    padding:  0;
+    text-align: center;
+}
+.header-nav .item {
+    flex: 0 0 auto;
+    margin: 0 0.15em 0 0.15em;
+    border: 0;
+    padding: 0;
+    line-height: 1.25;
+}
+.header-nav .current {
+    font-weight: bold;
+}
+@media screen and (min-width: 480px) {
+    .header-nav {
+        margin-top: 0.25em;
+    }
+    .header-nav .item{
+        margin: 0 0.25em 0 0.25em;
+        line-height: 1;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .header-nav {
+        margin-top: 0.35em;
+    }
+    .header-nav .item{
+        margin: 0 0.25em 0 0.25em;
+        line-height: 1;
+    }
+}
+
+/* -------------------------------------------------------------------------------------- */
+
+.foot-nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    clear: both;
+    margin: 0.25em 0 1em 0;
+}
+
+.foot-nav .item {
+    flex: 0 0 auto; 
+    margin: 0 0.15em 0 0.15em;
+    padding: 0;
+    line-height: 1.3;
+    font-size: 1.1rem;
+}
+
+.foot-nav .current {
+    font-weight: bold;
+}
+
+@media screen and (min-width: 480px) {
+    .foot-nav {
+        margin-top: 0.25em;
+    }
+    
+    .foot-nav .item {
+        padding: 0 0.25em 0 0.25em;
+        line-height: 1;
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .foot-nav {
+        margin-top: 0.35em;
+    }
+
+    .foot-nav .item {
+        padding: 0 0.25em 0 0.25em;
+        line-height: 1;
         font-size: 1.3rem;
     }
 }
 
+.foot-text {
+    width: 100%;
+    margin: 0 0 0.5em 0;
+    border: 0;
+    padding: 0;
+}
 
-.header-plain{
-    text-align: center;
-    font-weight: bold;
-    font-size: 1.1rem;
+.foot-text > p {
     margin: 0;
     border: 0;
-    border-bottom: 1px solid rgb(200, 200, 200);
     padding: 0;
-    padding-bottom: 0;
+    line-height: 1.3;
+    font-size: 1.1rem;
 }
 
-@media screen and (min-width: 480px) {    
-    .header-plain {
-        font-size: 1.25rem;
-    }
+.foot-text > .centre {
+    text-align: center;
 }
 
-@media screen and (min-width: 768px) {     
-    .header-plain {
-        font-size: 1.4rem;
-    }
+@media screen and (min-width: 480px) {
+    .foot-text > p {
+        font-size: 1.2rem;
+    }  
+}
+
+@media screen and (min-width: 768px) {
+    .foot-text > p {
+        font-size: 1.3rem;
+    }    
 }

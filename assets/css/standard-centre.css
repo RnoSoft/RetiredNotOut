@@ -24,15 +24,23 @@
 }
 .standard-centre p {
     text-align: center;
-    margin-left: 0%;
-    margin-right: 0%;
 }
 
 .standard-centre p .image-center-landscape {
     clear: both;
     display: block;
     text-align: center;
-    margin: 0.3em auto 0.25em auto;
+    margin: 1.5em auto 1.5em auto;
+    border: 1px solid black;
+    padding: 0;
+    width: 100%;
+}
+
+.standard-centre p .daily-photo-center-landscape {
+    clear: both;
+    display: block;
+    text-align: center;
+    margin: 0.3em auto 0.3em auto;
     border: 1px solid black;
     padding: 0;
     width: 100%;
@@ -42,10 +50,20 @@
     clear: both;
     display: block;
     text-align: center;
-    margin: 0.3em auto 0.25em auto;
+    margin: 0.3em auto 0.3em auto;
     border: 1px solid black;
     padding: 0;
-    width: 50%;
+    width: 60%;
+}
+
+.standard-centre p .daily-photo-center-portrait {
+    clear: both;
+    display: block;
+    text-align: center;
+    margin: 0.3em auto 0.3em auto;
+    border: 1px solid black;
+    padding: 0;
+    width: 60%;
 }
 
 @media screen and (min-width: 480px) {
@@ -54,10 +72,16 @@
         margin-right: 5%;
     }
     .standard-centre p .image-center-landscape {
-        width: 90%;
+        width: 100%;
+    }
+    .standard-centre p .daily-photo-center-landscape {
+        width: 100%;
     }
     .standard-centre p .image-center-portrait {
-        width: 45%;
+        width: 50%;
+    }
+    .standard-centre p .daily-photo-center-portrait {
+        width: 50%;
     }
 }
 
@@ -69,7 +93,13 @@
     .standard-centre p .image-center-landscape {
         width: 80%;
     }
+    .standard-centre p .daily-photo-center-landscape {
+        width: 80%;
+    }
     .standard-centre p .image-center-portrait {
+        width: 40%;
+    }
+    .standard-centre p .daily-photo-center-portrait {
         width: 40%;
     }
 }
