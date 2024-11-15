@@ -1,0 +1,114 @@
+
+.article-left {
+    margin: 0.8em auto 3em auto;
+    border: 0;
+    padding: 0;
+    width: 98%;
+}
+@media screen and (min-width: 480px) {
+    .article-left {
+        width:98%;
+    }
+}
+@media screen and (min-width: 768px) {
+    .article-left {
+        width:100%;
+    }
+}
+
+/* --------------------------------------------------------------------------- */
+
+.article-left .float-image-left {
+    float: left;
+    margin: 0.3em 1em 0.25em 0;
+    border: 1px solid black;
+    padding: 0;
+    width: 40%;
+    max-width: 175px;
+}
+
+.article-left .float-image-right {
+    float: right;
+    margin: 0.3em 0 0.25em 1em;
+    border: 1px solid black;
+    padding: 0;
+    width: 40%;
+    max-width: 175px;
+}
+
+.article-left .image-center-landscape {
+    clear: both;
+    display: block;
+    text-align: center;
+    margin: 0.3em auto 0.25em auto;
+    border: 1px solid black;
+    padding: 0;
+    width: 90%;
+}
+
+.article-left .image-center-portrait {
+    clear: both;
+    display: block;
+    text-align: center;
+    margin: 0.3em auto 0.25em auto;
+    border: 1px solid black;
+    padding: 0;
+    width: 40%;
+}
+
+@media screen and (min-width: 480px) {
+    .article-left .float-image-left {
+        width: 40%;
+        max-width: 250px;
+    }
+    .article-left .float-image-right {
+        width: 40%;
+        max-width: 250px;
+    }
+    .article-left .image-center-landscape {
+        width: 80%;
+    }
+    .article-left .image-center-portrait {
+        width: 40%;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .article-left .float-image-left {
+        width: 40%;
+        max-width: 250px;
+    }
+    .article-left .float-image-right {
+        width: 40%;
+        max-width: 250px;
+    }
+    .article-left .image-center-landscape {
+        width: 70%;
+    }
+    .article-left .image-center-portrait {
+        width: 30%;
+    }
+}
+.article-left ol {
+    list-style: decimal; 
+    margin: .5em 0 0 0;
+    padding: 0 0 0 0.25em;
+    line-height: 1.4;
+}
+
+.article-left li {
+    list-style: decimal; 
+    margin: .5em 0 0 0;
+    padding: 0 0 0 0.25em;
+    line-height: 1.4;
+}
+
+@media screen and (min-width: 480px) {
+    .article-left ol {
+        padding: 0 0 0 0.5em;
+    }
+    
+    .article-left li {
+        padding: 0 0 0 0.5em;
+    }
+}
