@@ -9,6 +9,18 @@
     border: 0;
     padding: 0;
 }
+.daily-photo .title h1 {
+    font-size: 1.3rem;
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+.daily-photo .title h2 {
+    font-size: 1.0rem;
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
 .daily-photo .links {
     margin: 0;
     border: 0;
@@ -18,10 +30,22 @@
     .daily-photo {
         width:90%;
     }
+    .daily-photo .title h1 {
+        font-size: 1.5rem;
+    }
+    .daily-photo .title h2 {
+        font-size: 1.2rem;
+    }
 }
 @media screen and (min-width: 768px) {
     .daily-photo {
         width:70%;
+    }
+    .daily-photo .title h1 {
+        font-size: 1.7rem;
+    }
+    .daily-photo .title h2 {
+        font-size: 1.4rem;
     }
 }
 
