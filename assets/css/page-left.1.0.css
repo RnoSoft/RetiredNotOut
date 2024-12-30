@@ -89,26 +89,3 @@
         width: 30%;
     }
 }
-.page-left ol {
-    list-style: decimal; 
-    margin: .5em 0 0 0;
-    padding: 0 0 0 0.25em;
-    line-height: 1.4;
-}
-
-.page-left li {
-    list-style: decimal; 
-    margin: .5em 0 0 0;
-    padding: 0 0 0 0.25em;
-    line-height: 1.4;
-}
-
-@media screen and (min-width: 480px) {
-    .page-left ol {
-        padding: 0 0 0 0.5em;
-    }
-    
-    .page-left li {
-        padding: 0 0 0 0.5em;
-    }
-}
