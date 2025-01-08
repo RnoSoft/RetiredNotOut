@@ -73,7 +73,7 @@
 
 .daily-photo p .image-landscape {
     clear: both;
-    display: block;
+    display: inline-block;
     text-align: center;
     margin: 0 auto 0 auto;
     border: 1px solid black;
@@ -83,12 +83,13 @@
 
 .daily-photo p .image-portrait {
     clear: both;
-    display: block;
+    /* display: block; */
     text-align: center;
     margin: 0 auto 0 auto;
     border: 1px solid black;
     padding: 0;
     width: 60%;
+    height: auto;
 }
 
 @media screen and (min-width: 480px) {
