@@ -73,6 +73,16 @@
     width: 100%;
 }
 
+.post-photo-center p .image-square {
+    clear: both;
+    display: block;
+    text-align: center;
+    margin: 1.5em auto 1.5em auto;
+    border: 10px solid black;
+    padding: 0;
+    width: 75%;
+}
+
 .post-photo-center p .image-portrait {
     clear: both;
     display: block;

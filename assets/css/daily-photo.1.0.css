@@ -10,42 +10,37 @@
     padding: 0;
 }
 .daily-photo .title h1 {
-    font-size: 1.3rem;
     margin: 0;
     border: 0;
     padding: 0;
 }
 .daily-photo .title h2 {
-    font-size: 1.0rem;
     margin: 0;
     border: 0;
     padding: 0;
 }
-.daily-photo .links {
+
+.daily-photo .links-top {
     margin: 0;
     border: 0;
     padding: 0;
 }
+
+.daily-photo .links-bottom {
+    margin: 1em 0 0 0;
+    border: 0;
+    padding: 0;
+}
+
+
 @media screen and (min-width: 480px) {
     .daily-photo {
         width:90%;
-    }
-    .daily-photo .title h1 {
-        font-size: 1.5rem;
-    }
-    .daily-photo .title h2 {
-        font-size: 1.2rem;
     }
 }
 @media screen and (min-width: 768px) {
     .daily-photo {
         width:70%;
-    }
-    .daily-photo .title h1 {
-        font-size: 1.7rem;
-    }
-    .daily-photo .title h2 {
-        font-size: 1.4rem;
     }
 }
 
@@ -73,7 +68,7 @@
 
 .daily-photo p .image-landscape {
     clear: both;
-    display: inline-block;
+    display: block;
     text-align: center;
     margin: 0 auto 0 auto;
     border: 1px solid black;
@@ -81,15 +76,24 @@
     width: 100%;
 }
 
+.daily-photo p .image-square {
+    clear: both;
+    display: block;
+    text-align: center;
+    margin: 0 auto 0 auto;
+    border: 1px solid black;
+    padding: 0;
+    width: 75%;
+}
+
 .daily-photo p .image-portrait {
     clear: both;
-    /* display: block; */
+    display: block;
     text-align: center;
     margin: 0 auto 0 auto;
     border: 1px solid black;
     padding: 0;
     width: 60%;
-    height: auto;
 }
 
 @media screen and (min-width: 480px) {
