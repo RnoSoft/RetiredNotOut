@@ -17,20 +17,7 @@
 
 /* --------------------------------------------------------------------------- */
 
-.tag-post-list .first-summary {
-    margin: 1em 0 0 0;
-    border: 0;
-    padding: 0;
-}
-
-.tag-post-list .subsequent-summary {
-    margin: 1em 0 0 0;
-    border: 0;
-    border-top: 1px solid rgb(200, 200, 200);
-    padding: 0;
-}
-
-.tag-post-list .summary-basic {
+/* .tag-post-list .summary-basic {
     margin: 0;
     border: 0;
     padding: 0;
@@ -41,32 +28,71 @@
     border: 0;
     padding: 0.2em 0 0 0;
     line-height: 1.3;
+} */
+
+.tag-post-list .first-summary {
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
+.tag-post-list .subsequent-summary {
+    margin: 0;
+    margin-top: 0.3em;
+    border: 0;
+    border-top: 1px solid rgb(152, 145, 145);
+    padding: 0;
 }
 
 .tag-post-list .summary-bottom {
     margin: 0;
-    border: 0; 
+    border: 0;
     padding: 0;
+}
+
+.tag-post-list .first-summary h2 {
+    font-size: 1.4rem;
+    padding-top: 0.4em;
+}
+
+.tag-post-list .subsequent-summary h2 {
+    font-size: 1.4rem;
+    padding-top: 0.2em;
 }
 
 .tag-post-list .summary-bottom p {
     margin: 0;
-    border: 0;
-    padding: 0.2em 0 0 0;
-    font-size: 1.1rem;
-    line-height: 1.2;
+    border: 0; 
+    padding: 0;
+    font-size: 1.2rem;
 }
 
 @media screen and (min-width: 480px) {
+    .tag-post-list .first-summary h2 {
+        font-size: 1.5rem;
+        padding-top: 0.7em;
+    }
+    .tag-post-list .subsequent-summary h2 {
+        font-size: 1.5rem;
+        padding-top: 0.2em;
+    }
     .tag-post-list .summary-bottom p {
-        padding: 0.2em 0 0 0;
-        font-size: 1.2rem;
+        font-size: 1.3rem;
+        padding-top: 0;
     }
 }
 @media screen and (min-width: 768px) {
+    .tag-post-list .first-summary h2 {
+        font-size: 1.6rem;
+        padding-top: 0.9em;
+    }
+    .tag-post-list .subsequent-summary h2 {
+        font-size: 1.6rem;
+        padding-top: 0.3em;
+    }
     .tag-post-list .summary-bottom p {
-        padding: 0.1em 0 0 0;
-        font-size: 1.3rem;
+        font-size: 1.4rem;
+        padding-top: 0;
     }
 }
 
