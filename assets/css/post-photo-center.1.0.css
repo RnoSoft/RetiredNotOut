@@ -67,7 +67,7 @@
     clear: both;
     display: block;
     text-align: center;
-    margin: 1.5em auto 1.5em auto;
+    margin: 0em auto 0em auto;
     border: 1px solid black;
     padding: 0;
     width: 100%;
@@ -77,8 +77,8 @@
     clear: both;
     display: block;
     text-align: center;
-    margin: 1.5em auto 1.5em auto;
-    border: 10px solid black;
+    margin: 0em auto 0em auto;
+    border: 1px solid black;
     padding: 0;
     width: 75%;
 }
@@ -87,7 +87,7 @@
     clear: both;
     display: block;
     text-align: center;
-    margin: 1.5em auto 1.5em auto;
+    margin: 0em auto 0em auto;
     border: 1px solid black;
     padding: 0;
     width: 60%;
