@@ -29,12 +29,14 @@
     margin: 0;
     border: 0;
     padding: 0;
+    text-align: center;
 }
 
 .journal .links-bottom {
     margin: 1em 0 0 0;
     border: 0;
     padding: 0;
+    text-align: center;
 }
 
 @media screen and (min-width: 480px) {
@@ -66,15 +68,23 @@
 .journal h6 {
     text-align: center;
 }
-.journal p {
+.journal .journal-content p {
     text-align: center;
+    margin: 0.1em 0 0 0;
+    border: red 0px solid;
+    padding: 0.2em 0 0.5em 0;
+}
+
+.journal .journal-content p:first-child {
+    margin: 1.6em auto 0em auto;
+    border: blue 0px solid;
 }
 
 .journal p .image-landscape {
     clear: both;
     display: block;
     text-align: center;
-    margin: 1.5em auto 0em auto;
+    margin: -0.25em auto 0em auto;
     border: 1px solid black;
     padding: 0;
     width: 100%;
@@ -84,7 +94,7 @@
     clear: both;
     display: block;
     text-align: center;
-    margin: 1.5em auto 0em auto;
+    margin: -0.25em auto 0em auto;
     border: 1px solid black;
     padding: 0;
     width: 75%;
@@ -95,7 +105,7 @@
     clear: both;
     display: block;
     text-align: center;
-    margin: 1.5em auto 0em auto;
+    margin: -0.25em auto 0em auto;
     border: 1px solid black;
     padding: 0;
     width: 60%;
@@ -120,10 +130,11 @@
     margin: 1.5em 0 0 0;
     width: 100%;
 }
-.journal-bottom > p {   
+.journal-bottom p {   
     line-height: 1.2;
     margin-top: 0.1em;
     font-size: 1.1rem;
+    text-align: center;
 }
 @media screen and (min-width: 480px) {
     .journal-bottom p {   
