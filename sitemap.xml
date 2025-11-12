@@ -1,35 +1,208 @@
----
-layout: null
-no-index: true;
----
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-    {%- for page in site.pages -%}
-        {%- if site.no-index -%}
-            {%- continue -%}
-        {%- endif -%}
-        {%- if page.no-index -%}
-            {%- continue -%}
-        {%- endif -%}
-         {%- if page.url == "/index" -%}
-            {%- assign _url = "" -%}
-        {%- else -%}
-            {%- assign _url = page.url -%}
-        {%- endif %}
-        <url><loc>https://retirednotout.uk{{_url}}</loc></url>
-    {%- endfor %}
-    {%- for page in site.posts -%}
-        {%- if site.no-index -%}
-            {%- continue -%}
-        {%- endif -%}
-        {%- if page.no-index -%}
-            {%- continue -%}
-        {%- endif -%}
-         {%- if page.url == "/index" -%}
-            {%- assign _url = "" -%}
-        {%- else -%}
-            {%- assign _url = page.url -%}
-        {%- endif %}
-        <url><loc>https://retirednotout.uk{{_url}}</loc></url>
-    {%- endfor %}
+        <url><loc>https://retirednotout.uk/contact</loc></url>
+        <url><loc>https://retirednotout.uk/copyright</loc></url>
+        <url><loc>https://retirednotout.uk/</loc></url>
+        <url><loc>https://retirednotout.uk/info</loc></url>
+        <url><loc>https://retirednotout.uk/blog/tags/photos/index.html</loc></url>
+        <url><loc>https://retirednotout.uk/blog/tags/south-west-scotland/index.html</loc></url>
+        <url><loc>https://retirednotout.uk/journal/royal-albert-dock-at-night-november-8-2025</loc></url>
+        <url><loc>https://retirednotout.uk/journal/royal-albert-dock-at-night-november-7-2025</loc></url>
+        <url><loc>https://retirednotout.uk/journal/huddersfield-station-works-october-27-2025</loc></url>
+        <url><loc>https://retirednotout.uk/journal/working-on-my-journal-october-2025</loc></url>
+        <url><loc>https://retirednotout.uk/journal/marsden-jazz-festival-2009</loc></url>
+        <url><loc>https://retirednotout.uk/journal/pigeons-in-york-2009</loc></url>
+        <url><loc>https://retirednotout.uk/journal/problems-with-kirklees-council-emptying-brown-bins-october-2025</loc></url>
+        <url><loc>https://retirednotout.uk/journal/lamb-hotel-eccles-october-2025</loc></url>
+        <url><loc>https://retirednotout.uk/journal/walk-seacombe-ferry-to-new-brighton-october-2025</loc></url>
+        <url><loc>https://retirednotout.uk/journal/george-orwell-pub-new-brighton-october-2025</loc></url>
+        <url><loc>https://retirednotout.uk/journal/bow-legged-beagle-new-brighton-october-2025</loc></url>
+        <url><loc>https://retirednotout.uk/journal/knotty-ash-direction-sign-on-m62-october-2025</loc></url>
+        <url><loc>https://retirednotout.uk/journal/crosby-beach-september-2025</loc></url>
+        <url><loc>https://retirednotout.uk/journal/stanley-dock-liverpool-september-2025</loc></url>
+        <url><loc>https://retirednotout.uk/journal/ship-in-north-liverpool-dock-september-2025</loc></url>
+        <url><loc>https://retirednotout.uk/journal/a-drive-along-the-mersey-september-2025</loc></url>
+        <url><loc>https://retirednotout.uk/journal/liverpool-philharmonic-hall-free-music-festival-september-2025</loc></url>
+        <url><loc>https://retirednotout.uk/journal/huddersfield-station-works-september-25-2025</loc></url>
+        <url><loc>https://retirednotout.uk/journal/huddersfield-station-works-september-19-2025</loc></url>
+        <url><loc>https://retirednotout.uk/journal/river-tyne-north-and-south-shields-september-2025</loc></url>
+        <url><loc>https://retirednotout.uk/journal/tynemouth-coast-september-2025</loc></url>
+        <url><loc>https://retirednotout.uk/journal/newcastle-quayside-september-2025</loc></url>
+        <url><loc>https://retirednotout.uk/journal/problems-shopping-september-2025</loc></url>
+        <url><loc>https://retirednotout.uk/journal/no-29-ale-and-gin-bar-richmond-september-2025</loc></url>
+        <url><loc>https://retirednotout.uk/journal/the-steamboat-pub-shouth-shields-september-2025</loc></url>
+        <url><loc>https://retirednotout.uk/journal/tynemouth-lodge-hotel-september-2025</loc></url>
+        <url><loc>https://retirednotout.uk/journal/free-trade-inn-newcastle-september-2025</loc></url>
+        <url><loc>https://retirednotout.uk/journal/remember-covid-sign-on-fence-at-canal</loc></url>
+        <url><loc>https://retirednotout.uk/journal/huddersfield-station-upgrade-september-5</loc></url>
+        <url><loc>https://retirednotout.uk/journal/missing-bridge-john-willian-street-hudersfield-september-5</loc></url>
+        <url><loc>https://retirednotout.uk/journal/mammoet-crawler-crane-huddersfield-station-september-5</loc></url>
+        <url><loc>https://retirednotout.uk/journal/a-trip-to-ilkley-august-2025</loc></url>
+        <url><loc>https://retirednotout.uk/journal/carrs-road-closure-august-2025</loc></url>
+        <url><loc>https://retirednotout.uk/journal/baltic-fleet-pub-liverpool-august-2025</loc></url>
+        <url><loc>https://retirednotout.uk/journal/liverpool-south-docks-august-2025</loc></url>
+        <url><loc>https://retirednotout.uk/journal/a-walk-along-the-river-mersey-at-widnes-august-2025</loc></url>
+        <url><loc>https://retirednotout.uk/journal/peaky-blinders-watery-lane-location</loc></url>
+        <url><loc>https://retirednotout.uk/journal/a-walk-along-the-mersey-august-2025</loc></url>
+        <url><loc>https://retirednotout.uk/journal/allerton-oak-calderstones-park-liverpool-august-2025</loc></url>
+        <url><loc>https://retirednotout.uk/journal/problems-with-transport-for-wales-august-2025</loc></url>
+        <url><loc>https://retirednotout.uk/journal/rip-off-day-returns-in-west-yorkshire</loc></url>
+        <url><loc>https://retirednotout.uk/journal/marsden-moor-recovery-august-2025</loc></url>
+        <url><loc>https://retirednotout.uk/journal/bus-stop-to-let-in-slaithwaite</loc></url>
+        <url><loc>https://retirednotout.uk/journal/a-walk-along-the-canal-and-river-in-leeds-august-2025</loc></url>
+        <url><loc>https://retirednotout.uk/journal/bridges-castlefield-basin-manchester-july-2025</loc></url>
+        <url><loc>https://retirednotout.uk/journal/fox-and-pine-mirco-pub-oldham-july-2025</loc></url>
+        <url><loc>https://retirednotout.uk/journal/this-ones-for-john-photos-of-beer-bottles</loc></url>
+        <url><loc>https://retirednotout.uk/journal/duck-at-antwerp-docks-2010</loc></url>
+        <url><loc>https://retirednotout.uk/journal/cost-of-electricity-when-running-an-electric-car</loc></url>
+        <url><loc>https://retirednotout.uk/journal/our-octavia-car-is-getting-old-july-2025</loc></url>
+        <url><loc>https://retirednotout.uk/journal/leeds-liverpool-stanley-lock-flight-5-july-2025-1</loc></url>
+        <url><loc>https://retirednotout.uk/journal/victoria-inn-durham-2012</loc></url>
+        <url><loc>https://retirednotout.uk/journal/the-stupidity-of-train-ticket-pricing-21-june-2025</loc></url>
+        <url><loc>https://retirednotout.uk/journal/grey-horse-pub-manchester-june-2025</loc></url>
+        <url><loc>https://retirednotout.uk/journal/castlefield-viaduct-manchester-june-2025</loc></url>
+        <url><loc>https://retirednotout.uk/journal/centre-of-slaithwaite-june-2025</loc></url>
+        <url><loc>https://retirednotout.uk/journal/tree-in-the-way-of-narrow-boats-saddleworth-june-2025</loc></url>
+        <url><loc>https://retirednotout.uk/journal/the-method-for-electing-the-american-president-is-one-of-the-worst-available</loc></url>
+        <url><loc>https://retirednotout.uk/journal/joining-the-campaign-for-real-ale-in-january-1974</loc></url>
+        <url><loc>https://retirednotout.uk/journal/liverpool-waterfront-from-shorefields-nature-park-may-2025</loc></url>
+        <url><loc>https://retirednotout.uk/journal/shorefields-nature-park-on-the-banks-of-the-mersey-may-2025</loc></url>
+        <url><loc>https://retirednotout.uk/journal/new-bridge-accross-the-mersey-at-runcorn-may-2025</loc></url>
+        <url><loc>https://retirednotout.uk/journal/broad-geen-station-liverpool-rebuild</loc></url>
+        <url><loc>https://retirednotout.uk/journal/fisherman-at-sparth-reservour</loc></url>
+        <url><loc>https://retirednotout.uk/journal/clough-mill-across-the-mill-pond-in-2009</loc></url>
+        <url><loc>https://retirednotout.uk/journal/clough-mill-and-cottages-in-2025</loc></url>
+        <url><loc>https://retirednotout.uk/journal/clough-mill-and-cottages-in-2009</loc></url>
+        <url><loc>https://retirednotout.uk/journal/the-site-of-clough-mill-in-may-2025</loc></url>
+        <url><loc>https://retirednotout.uk/journal/clough-mill-october-2013-one</loc></url>
+        <url><loc>https://retirednotout.uk/journal/clough-mill-december-2009-one</loc></url>
+        <url><loc>https://retirednotout.uk/journal/houses-near-clough-mill-on-huddersfield-narrow-canal-may-2025</loc></url>
+        <url><loc>https://retirednotout.uk/journal/huddersfield-narrow-canal-lock-33e-may-2025</loc></url>
+        <url><loc>https://retirednotout.uk/journal/chip-shop-hebden-bridge-may-2</loc></url>
+        <url><loc>https://retirednotout.uk/journal/street-scene-hebden-bridge-may-2-no-2</loc></url>
+        <url><loc>https://retirednotout.uk/journal/street-scene-hebden-bridge-may-2-no-1</loc></url>
+        <url><loc>https://retirednotout.uk/journal/rochdale-canal-hebden-bridge-may-2025-no-2</loc></url>
+        <url><loc>https://retirednotout.uk/journal/rochdale-canal-hebden-bridge-may-2025-no-1</loc></url>
+        <url><loc>https://retirednotout.uk/journal/local-election-day-may-2025</loc></url>
+        <url><loc>https://retirednotout.uk/journal/bar-fox-and-goose-hebden-bridge-2025-05-02</loc></url>
+        <url><loc>https://retirednotout.uk/journal/cars-get-in-the-way-of-photos</loc></url>
+        <url><loc>https://retirednotout.uk/journal/wires-get-in-the-way-of-photos</loc></url>
+        <url><loc>https://retirednotout.uk/journal/today-is-my-seventieth-birthday</loc></url>
+        <url><loc>https://retirednotout.uk/journal/marsden-bank-bottom-mill-april-2025</loc></url>
+        <url><loc>https://retirednotout.uk/journal/marsden-moor-fire-april-2025</loc></url>
+        <url><loc>https://retirednotout.uk/journal/saddleworth-from-the-pennines-april-2025</loc></url>
+        <url><loc>https://retirednotout.uk/journal/canal-reflections-april-2025</loc></url>
+        <url><loc>https://retirednotout.uk/journal/cherry-tree-opposite-our-house</loc></url>
+        <url><loc>https://retirednotout.uk/journal/swan-on-the-sankey-canal-march-2025</loc></url>
+        <url><loc>https://retirednotout.uk/journal/boats-on-the-sankey-canal-penketh-three-april-2025</loc></url>
+        <url><loc>https://retirednotout.uk/journal/boats-on-the-sankey-canal-penketh-two-march-2025</loc></url>
+        <url><loc>https://retirednotout.uk/journal/boats-on-the-sankey-canal-penketh-one-march-2025</loc></url>
+        <url><loc>https://retirednotout.uk/journal/ship-in-north-liverpool-dock-march-2025</loc></url>
+        <url><loc>https://retirednotout.uk/journal/hilbre-island-from-the-west-kirby-war-memorial-march-2025</loc></url>
+        <url><loc>https://retirednotout.uk/journal/west-kirby-war-memorial-memory</loc></url>
+        <url><loc>https://retirednotout.uk/journal/river-colne-footbridge-2025-03-06</loc></url>
+        <url><loc>https://retirednotout.uk/journal/prostate-cancer-psa-test-passed</loc></url>
+        <url><loc>https://retirednotout.uk/journal/prostate-cancer-psa-test</loc></url>
+        <url><loc>https://retirednotout.uk/journal/maybe-i-have-prostate-cancer</loc></url>
+        <url><loc>https://retirednotout.uk/journal/canal-works-at-the-tunnel-end-february-2025</loc></url>
+        <url><loc>https://retirednotout.uk/journal/the-hop-vine-pub-burscough-on-the-22-january-2025</loc></url>
+        <url><loc>https://retirednotout.uk/journal/my-sisters-cat-cleo-on-the-22-february-2024</loc></url>
+        <url><loc>https://retirednotout.uk/journal/carrs-road-marsden-at-night</loc></url>
+        <url><loc>https://retirednotout.uk/journal/view-over-marsden-towards-pennines-2025-01-30</loc></url>
+        <url><loc>https://retirednotout.uk/journal/new-mill-marsden-2025-01-30</loc></url>
+        <url><loc>https://retirednotout.uk/journal/lock-39e-huddersfield-narrow-canal-2025-01-30</loc></url>
+        <url><loc>https://retirednotout.uk/journal/lock-38e-huddersfield-narrow-canal-2025-01-30</loc></url>
+        <url><loc>https://retirednotout.uk/journal/marsden-from-stubbin-road-2025-01-30</loc></url>
+        <url><loc>https://retirednotout.uk/journal/marden-church-graveyard-joke</loc></url>
+        <url><loc>https://retirednotout.uk/journal/marsden-charch-hoar-frost-in-2009</loc></url>
+        <url><loc>https://retirednotout.uk/journal/marsden-football-club-under-snow</loc></url>
+        <url><loc>https://retirednotout.uk/journal/view-of-marsden-new-inn-and-snowy-pennines</loc></url>
+        <url><loc>https://retirednotout.uk/journal/view-of-marsden-mechanics-clock-tower-and-snowy-pennines-two</loc></url>
+        <url><loc>https://retirednotout.uk/journal/view-of-marsden-mechanics-clock-tower-and-snowy-pennines-one</loc></url>
+        <url><loc>https://retirednotout.uk/journal/view-of-marsden-brougham-mill-and-snowy-pennines</loc></url>
+        <url><loc>https://retirednotout.uk/journal/view-of-new-inn-pub-and-snowy-pennines</loc></url>
+        <url><loc>https://retirednotout.uk/journal/mallinsons-beers-by-the-fire</loc></url>
+        <url><loc>https://retirednotout.uk/journal/standedge-tunnel-entry-and-cafe</loc></url>
+        <url><loc>https://retirednotout.uk/journal/marsden-wall-capping-stone-theft</loc></url>
+        <url><loc>https://retirednotout.uk/blog/daily-photo-2025-01-20</loc></url>
+        <url><loc>https://retirednotout.uk/blog/daily-photo-2025-01-19</loc></url>
+        <url><loc>https://retirednotout.uk/blog/daily-photo-2025-01-11</loc></url>
+        <url><loc>https://retirednotout.uk/blog/daily-photo-2025-01-10</loc></url>
+        <url><loc>https://retirednotout.uk/blog/daily-photo-2025-01-03</loc></url>
+        <url><loc>https://retirednotout.uk/blog/daily-photo-2025-01-02</loc></url>
+        <url><loc>https://retirednotout.uk/blog/daily-photo-2025-01-01</loc></url>
+        <url><loc>https://retirednotout.uk/blog/daily-photo-2024-12-31</loc></url>
+        <url><loc>https://retirednotout.uk/blog/daily-photo-2024-12-30</loc></url>
+        <url><loc>https://retirednotout.uk/blog/daily-photo-2024-12-29</loc></url>
+        <url><loc>https://retirednotout.uk/blog/daily-photo-2024-12-28</loc></url>
+        <url><loc>https://retirednotout.uk/blog/daily-photo-2024-12-27</loc></url>
+        <url><loc>https://retirednotout.uk/blog/daily-photo-2024-12-26</loc></url>
+        <url><loc>https://retirednotout.uk/blog/daily-photo-2024-12-25</loc></url>
+        <url><loc>https://retirednotout.uk/blog/daily-photo-2024-12-24</loc></url>
+        <url><loc>https://retirednotout.uk/blog/daily-photo-2024-12-23</loc></url>
+        <url><loc>https://retirednotout.uk/blog/daily-photo-2024-12-22</loc></url>
+        <url><loc>https://retirednotout.uk/blog/daily-photo-2024-12-21</loc></url>
+        <url><loc>https://retirednotout.uk/blog/daily-photo-2024-12-20</loc></url>
+        <url><loc>https://retirednotout.uk/blog/daily-photo-2024-12-19</loc></url>
+        <url><loc>https://retirednotout.uk/blog/daily-photo-2024-12-18</loc></url>
+        <url><loc>https://retirednotout.uk/blog/daily-photo-2024-12-17</loc></url>
+        <url><loc>https://retirednotout.uk/blog/daily-photo-2024-12-16</loc></url>
+        <url><loc>https://retirednotout.uk/blog/daily-photo-2024-12-15</loc></url>
+        <url><loc>https://retirednotout.uk/blog/daily-photo-2024-12-14</loc></url>
+        <url><loc>https://retirednotout.uk/blog/daily-photo-2024-12-13</loc></url>
+        <url><loc>https://retirednotout.uk/blog/daily-photo-2024-12-12</loc></url>
+        <url><loc>https://retirednotout.uk/blog/daily-photo-2024-12-11</loc></url>
+        <url><loc>https://retirednotout.uk/blog/daily-photo-2024-12-10</loc></url>
+        <url><loc>https://retirednotout.uk/blog/daily-photo-2024-12-09</loc></url>
+        <url><loc>https://retirednotout.uk/blog/daily-photo-2024-12-08</loc></url>
+        <url><loc>https://retirednotout.uk/blog/daily-photo-2024-12-07</loc></url>
+        <url><loc>https://retirednotout.uk/blog/daily-photo-2024-11-30</loc></url>
+        <url><loc>https://retirednotout.uk/blog/daily-photo-2024-11-29</loc></url>
+        <url><loc>https://retirednotout.uk/blog/daily-photo-2024-11-28</loc></url>
+        <url><loc>https://retirednotout.uk/blog/daily-photo-2024-11-27</loc></url>
+        <url><loc>https://retirednotout.uk/blog/daily-photo-2024-11-26</loc></url>
+        <url><loc>https://retirednotout.uk/blog/daily-photo-2024-11-25</loc></url>
+        <url><loc>https://retirednotout.uk/blog/daily-photo-2024-11-24</loc></url>
+        <url><loc>https://retirednotout.uk/blog/daily-photo-2024-11-23</loc></url>
+        <url><loc>https://retirednotout.uk/blog/daily-photo-2024-11-22</loc></url>
+        <url><loc>https://retirednotout.uk/blog/daily-photo-2024-11-21</loc></url>
+        <url><loc>https://retirednotout.uk/blog/daily-photo-2024-11-20</loc></url>
+        <url><loc>https://retirednotout.uk/blog/daily-photo-2024-11-19</loc></url>
+        <url><loc>https://retirednotout.uk/blog/daily-photo-2024-11-18</loc></url>
+        <url><loc>https://retirednotout.uk/blog/daily-photo-2024-11-17</loc></url>
+        <url><loc>https://retirednotout.uk/blog/daily-photo-2024-11-16</loc></url>
+        <url><loc>https://retirednotout.uk/blog/misty-day-in-marsden-late-october-2024</loc></url>
+        <url><loc>https://retirednotout.uk/blog/daily-photo-2024-10-15</loc></url>
+        <url><loc>https://retirednotout.uk/blog/daily-photo-2024-10-14</loc></url>
+        <url><loc>https://retirednotout.uk/blog/daily-photo-2024-10-13</loc></url>
+        <url><loc>https://retirednotout.uk/blog/daily-photo-2024-10-12</loc></url>
+        <url><loc>https://retirednotout.uk/blog/daily-photo-2024-10-11</loc></url>
+        <url><loc>https://retirednotout.uk/blog/daily-photo-2024-10-10</loc></url>
+        <url><loc>https://retirednotout.uk/blog/daily-photo-2024-10-09</loc></url>
+        <url><loc>https://retirednotout.uk/blog/daily-photo-2024-10-08</loc></url>
+        <url><loc>https://retirednotout.uk/blog/daily-photo-2024-10-07</loc></url>
+        <url><loc>https://retirednotout.uk/blog/daily-photo-2024-10-06</loc></url>
+        <url><loc>https://retirednotout.uk/blog/daily-photo-2024-10-05</loc></url>
+        <url><loc>https://retirednotout.uk/blog/daily-photo-2024-10-04</loc></url>
+        <url><loc>https://retirednotout.uk/blog/daily-photo-2024-10-03</loc></url>
+        <url><loc>https://retirednotout.uk/blog/daily-photo-2024-10-02</loc></url>
+        <url><loc>https://retirednotout.uk/blog/daily-photo-2024-10-01</loc></url>
+        <url><loc>https://retirednotout.uk/blog/a-few-days-exploring-amiens-in-august-2009</loc></url>
+        <url><loc>https://retirednotout.uk/blog/liverpool-llandudno-25-june-2024-on-the-waverley-paddle-steamer</loc></url>
+        <url><loc>https://retirednotout.uk/blog/omaha-beach-normandy</loc></url>
+        <url><loc>https://retirednotout.uk/blog/a-trip-to-kirkcudbright-summer-2022</loc></url>
+        <url><loc>https://retirednotout.uk/blog/kirkcudbright-harbour-scotland-2022</loc></url>
+        <url><loc>https://retirednotout.uk/blog/garlieston-harbour-scotland-2022</loc></url>
+        <url><loc>https://retirednotout.uk/blog/isle-of-whithorn-harbour-scotland-2022</loc></url>
+        <url><loc>https://retirednotout.uk/blog/family-trips-2007-to-2012</loc></url>
+        <url><loc>https://retirednotout.uk/blog/a-trip-along-the-wirral-coast</loc></url>
+        <url><loc>https://retirednotout.uk/blog/a-train-ride-on-the-east-lancs-railway</loc></url>
+        <url><loc>https://retirednotout.uk/blog/world-war-two-day-haworth</loc></url>
+        <url><loc>https://retirednotout.uk/blog/two-days-in-rouen</loc></url>
+        <url><loc>https://retirednotout.uk/blog/a-drive-to-the-coast-near-rouen</loc></url>
+        <url><loc>https://retirednotout.uk/blog/a-night-in-amiens</loc></url>
+        <url><loc>https://retirednotout.uk/blog/a-week-in-brugge</loc></url>
+        <url><loc>https://retirednotout.uk/blog/a-trip-to-oostend-pier</loc></url>
+        <url><loc>https://retirednotout.uk/blog/digitising-old-slides-negatives-and-prints</loc></url>
+        <url><loc>https://retirednotout.uk/blog/marsden-winter-snow-2009-2010</loc></url>
 </urlset>
