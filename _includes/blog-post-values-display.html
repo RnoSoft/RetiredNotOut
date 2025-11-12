@@ -1,0 +1,25 @@
+<p>First Published: {{_pPubDate}}</p>
+{% if _pLastModDate.size > 0 -%}
+    <p>Last modified: {{_pLastModDate}}</p>
+{%- endif -%}
+{% case _authorCount %}
+    {% when 0 %}
+    {% when 1 %}
+        <p>Author: {{_authors}}</p>
+    {% else %}
+        <p>Authors: {{_authors}}</p>
+{% endcase %}
+{% case _editorCount %}
+    {% when 0 %}
+    {% when 1 %}
+        <p>Editor: {{_editors}}</p>
+    {% else %}
+        <p>Editors: {{_editors}}</p>
+{% endcase %}
+{% case _tagCount %}
+    {% when 0 %}
+    {% when 1 %}
+        <p>Tag: {{_tags}}</p>
+    {% else %}
+        <p>Tags: {{_tags}}</p>
+{% endcase %}

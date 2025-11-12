@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+{% include header-html.html %}
+<link rel="stylesheet" href="/assets/css/post-photo-center.1.0.css">
+</head>
+<body>
+<div class="container">
+{% include header-body.html %} 
+{% include blog-post-values-get.html %} 
+
+<article class="main-area">
+<div class="post-photo-center">
+<main>
+    {{ page.content | markdownify }}   
+    <section class="post-photo-center-bottom">
+        {% include blog-post-values-display.html %} 
+    </section>
+</main>
+</div>
+</article>
+
+{% include footer.html %}            
+</div>
+</body>
+</html>

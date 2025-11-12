@@ -1,0 +1,81 @@
+# Where things are
+safe: false
+source           : .
+destination         : ./_site
+exclude             : [".git", ".jekyll-cache", "_old", ".gitignore", "Gemfile", "Gemfile.lock"]
+include             : ["CNAME"]
+keep_files          : [".git", ".svn"]
+encoding            : "utf-8"
+plugins             : ["jekyll-paginate-v2"]
+includes_dir        : _includes
+layouts_dir         : _layouts
+data_dir            : _data
+port                : 4000
+host                : 127.0.0.1
+baseurl             : "" # does not include hostname
+
+# Draft posts
+show_drafts         : false
+future              : false
+unpublished         : false
+limit_posts         : 0
+
+# Markdown
+strict_front_matter : true
+markdown_ext        : "md"
+markdown            : kramdown
+highlighter         : rouge
+excerpt_separator   : "\n\n"
+
+#Server
+livereload          : true
+livereload_min_delay: 5
+
+# Site Specific
+title: "Retired Not Out, Paul Chappell's Journal"
+email: "paul.temp@outlook.com"
+description: ""
+url: ""
+no-index: false
+under-development: false
+
+# Outputting
+#permalink           : date
+#paginate_path       : /page:num
+timezone            : null
+
+collections:
+  posts:
+    output          : true
+
+liquid:
+  error_mode        : warn
+  strict_filters    : false
+  strict_variables  : false
+
+kramdown:
+  input             : GFM
+  auto_ids          : true
+  entity_output     : as_char
+  toc_levels        : [1, 2, 3, 4, 5, 6]
+  smart_quotes      : lsquo,rsquo,ldquo,rdquo
+  hard_wrap         : false
+  footnote_nr       : 1
+  show_warnings     : false
+
+pagination:
+  enabled: true 
+  debug: false
+  collection: posts
+  per_page: 16
+  permalink: /page/:num/
+  title: :title Page :num
+  sort_field: date
+  sort_reverse: true  
+  indexpage:
+  extension: 
+  trail:
+    before: 3
+    after: 3
+
+    

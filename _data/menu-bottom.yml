@@ -1,0 +1,35 @@
+# Permalinks can have text appended to them. For example: '/blog/all-posts' specifies the permalink
+# as '/blog/', however 'page.permalink' has 'index.html' added, giving '/blog/index.html'. 
+# So we use two variables:
+#
+#   permalink_to_use    this one is used in <a> tags.
+#   permalink_compare   this one is used in comparisons. For example: when checking to see if a 
+#                       meni item is the current page, like in the blog menu item.
+
+- name: About
+  permalink_to_use: /
+  permalink_compare: /
+
+- name: Copyright
+  permalink_to_use: /copyright
+  permalink_compare: /copyright
+
+- name: Posts
+  permalink_to_use: /blog/
+  permalink_compare: /blog/index.html
+
+- name: Tags
+  permalink_to_use: /blog/tags/
+  permalink_compare: /blog/tags/
+
+- name: Journal
+  permalink_to_use: /journal/royal-albert-dock-at-night-november-8-2025
+  permalink_compare: /journal/royal-albert-dock-at-night-november-8-2025
+  
+- name: Contact
+  permalink_to_use: /contact
+  permalink_compare: /contact
+  
+- name: Info
+  permalink_to_use: /info
+  permalink_compare: /info

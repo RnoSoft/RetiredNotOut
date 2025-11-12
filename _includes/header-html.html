@@ -1,0 +1,41 @@
+{%- if site.under-development or site.no-index -%}
+    {%- assign _hhNoIndex = true -%}
+{%- else -%}
+    {%- if page.no-index -%}
+    {%- assign _hhNoIndex = true -%}
+    {%- else -%}
+    {%- assign _hhNoIndex = false -%}
+    {%- endif -%}
+{%- endif -%}
+
+{%- if page.html-header-title -%}
+    {%- assign _hhTitle = page.html-header-title | strip -%}
+    {%- if _hhTitle == "" -%}
+    {%- assign _hhTitle=page.title | strip -%}
+    {%- endif -%}
+{%- else %}
+    {%- assign _hhTitle=page.title | strip -%}
+{%- endif -%}
+
+{%- if page.html-header-description -%}
+    {%- assign _hhDescription = page.html-header-description | strip -%}
+    {%- if _hhDescription == "" -%}
+    {%- assign _hhDescription=page.description | strip -%}
+    {%- endif -%}
+{%- else %}
+    {%- assign _hhDescription=page.description | strip -%}
+{%- endif -%}
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+<link rel="stylesheet" href="/assets/css/common.1.0.css">
+<link rel="icon" href="/assets/favicon.ico">
+{% if _hhNoIndex -%}
+<meta name="robots" content="noindex">
+{%- endif %}
+{% if _hhTitle != "" -%}
+<title>{{_hhTitle}}</title>
+{%- endif %}
+{% if _hhDescription != "" -%}
+<meta name="description" content="{{_hhDescription}}"/>
+{%- endif -%}

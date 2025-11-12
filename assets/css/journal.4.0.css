@@ -1,0 +1,179 @@
+.journal {
+    margin: 0 auto 0 auto;
+    border: 0;
+    padding: 0;
+}
+.journal h1 {
+    text-align: center;
+}
+.journal h2 {
+    text-align: center;
+}
+.journal h3 {
+    text-align: center;
+}
+.journal h4 {
+    text-align: center;
+}
+.journal h5 {
+    text-align: center;
+}
+.journal h6 {
+    text-align: center;
+}
+.journal p {
+    text-align: center;
+}
+
+/* ----------------------------------------------------------------------------- */
+
+.journal .journal-title {
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
+.journal .journal-title h1 {
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+.journal .journal-title h2 {
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+.journal .journal-title p {
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+/* ----------------------------------------------------------------------------- */
+
+.journal .journal-content {
+    margin: 0 auto 0 auto;
+    border: 0;
+    padding: 0;
+}
+
+.journal .journal-content p {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 0px solid blue;
+    padding: 0;
+}
+
+.journal .journal-content .p-image {
+    max-width: 100%;
+    margin: 0.8em auto 0.8em auto;
+    border: 0px solid red;
+    padding: 0;
+}
+
+.journal .journal-content .p-image-description {
+    max-width: 100%;
+    margin: -0.6em auto 0em auto;
+    border: 0px solid red;
+    padding: 0;
+    font-style: italic;
+}
+
+.journal .journal-content p .image-landscape {
+    clear: both;
+    display: block;
+    text-align: center;
+    margin: 0 auto 0 auto;
+    border: 1px solid black;
+    padding: 0;
+    width: 100%;
+}
+
+.journal .journal-content p .image-square {
+    clear: both;
+    display: block;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid black;
+    padding: 0;
+    width: 75%;
+    height: auto;
+}
+
+.journal .journal-content p .image-portrait {
+    clear: both;
+    display: block;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid black;
+    padding: 0;
+    width: 60%;
+    height: auto;
+}
+
+@media screen and (min-width: 480px) {
+    .journal .journal-content .p-image {
+        margin: 1.2em auto 1.2em auto;
+    }
+    .journal .journal-content .p-image-description {
+        margin: -1.0em auto 0em auto;
+    }
+    .journal .journal-content p .image-portrait {
+        width: 55%;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .journal .journal-content .p-image {
+        margin: 1.2em auto 1.2em auto;
+    }
+    .journal .journal-content .p-image-description {
+        margin: -1.0em auto 0em auto;
+    }
+    .journal .journal-content p .image-portrait {
+        width: 50%;
+    }
+}
+
+/* ----------------------------------------------------------------------------- */
+
+.journal .journal-bottom {
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
+.journal .journal-bottom .journal-bottom-links {
+    margin: 1.2em 0 0.6em 0;
+    border: 0;
+    padding: 0;
+}
+
+.journal .journal-bottom .journal-bottom-detail {
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
+.journal .journal-bottom .journal-bottom-detail p {
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
+@media screen and (min-width: 480px) {
+    .journal .journal-bottom .journal-bottom-detail p {   
+        line-height: 1.2;
+        margin-top: 0.1em;
+        font-size: 1.2rem;
+    }
+}
+@media screen and (min-width: 768px) {
+    .journal .journal-bottom .journal-bottom-detail p {   
+        line-height: 1.2;
+        margin-top: 0.1em;
+        font-size: 1.3rem;
+    }
+}
