@@ -198,9 +198,9 @@ ol > li {
 
 .container .main-area {
     flex: 1 0 auto;
-    max-width: 1000px;
+    max-width: 900px;
     margin: 0.8em auto 3em auto;
-    border: 0;
+    border: 0px solid red;
     padding: 0;
     width: 100%;
     display: flex;
