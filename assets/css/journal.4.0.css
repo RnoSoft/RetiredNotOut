@@ -51,13 +51,14 @@
 /* ----------------------------------------------------------------------------- */
 
 .journal .journal-content {
+    max-width: 900px;
     margin: 0 auto 0 auto;
     border: 0;
     padding: 0;
 }
 
 .journal .journal-content p {
-    max-width: 1000px;
+    max-width: 1000%;
     margin-left: auto;
     margin-right: auto;
     border: 0px solid blue;
