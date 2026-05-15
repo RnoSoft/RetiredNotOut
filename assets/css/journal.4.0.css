@@ -114,6 +114,16 @@
     height: auto;
 }
 
+.journal .journal-content p .image-portrait-small {
+    clear: both;
+    display: block;
+    text-align: center;
+    margin: 0em auto 0em auto;
+    border: 1px solid black;
+    padding: 0;
+    width: 50%;
+}
+
 @media screen and (min-width: 480px) {
     .journal .journal-content .p-image {
         margin: 1.2em auto 1.2em auto;
@@ -123,6 +133,9 @@
     }
     .journal .journal-content p .image-portrait {
         width: 55%;
+    }
+    .journal .journal-content p .image-portrait-small {
+        width: 40%;
     }
 }
 
@@ -135,6 +148,9 @@
     }
     .journal .journal-content p .image-portrait {
         width: 50%;
+    }
+    .journal .journal-content p .image-portrait-small {
+        width: 40%;
     }
 }
 

@@ -105,6 +105,28 @@
     }
 }
 
+.post-photo-center p .image-portrait-small {
+    clear: both;
+    display: block;
+    text-align: center;
+    margin: 0em auto 0em auto;
+    border: 1px solid black;
+    padding: 0;
+    width: 50%;
+}
+
+@media screen and (min-width: 480px) {
+    .post-photo-center p .image-portrait-small {
+        width: 40%;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .post-photo-center p .image-portrait-small {
+        width: 40%;
+    }
+}
+
 /* --------------------------------------------------------------------------- */
 
 .post-photo-center-bottom {
