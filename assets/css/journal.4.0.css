@@ -48,6 +48,37 @@
     border: 0;
     padding: 0;
 }
+
+.journal .journal-link {
+    margin: 0.5em 1em 0 1em;
+    border: 0;
+    padding: 0;
+}
+.journal .journal-link p {
+    margin: 0.0em 0 0 0;
+    /* border: 1px solid blue; */
+    padding: 0;
+}
+
+@media screen and (min-width: 480px) {
+    .journal .journal-link {
+        margin: 0.5em 3em 0 3em;
+    }
+    .journal .journal-link p {
+        margin: 0.0em 0 0 0;
+        /* border: 1px solid green; */
+    } 
+}
+
+@media screen and (min-width: 768px) {
+    .journal .journal-link {
+        margin: 0.6em 5em 0 6em;
+    }
+    .journal .journal-link p {
+        margin: 0.0em 0 0 0;
+        /* border: 1px solid red; */
+    } 
+}
 /* ----------------------------------------------------------------------------- */
 
 .journal .journal-content {
@@ -157,19 +188,13 @@
 /* ----------------------------------------------------------------------------- */
 
 .journal .journal-bottom {
-    margin: 0;
-    border: 0;
-    padding: 0;
-}
-
-.journal .journal-bottom .journal-bottom-links {
-    margin: 1.2em 0 0.6em 0;
-    border: 0;
+    margin: 1.5em 0 0 0;
+    /* border: 1px solid red; */
     padding: 0;
 }
 
 .journal .journal-bottom .journal-bottom-detail {
-    margin: 0;
+    margin: 0 0 0.75em 0;
     border: 0;
     padding: 0;
 }
@@ -183,14 +208,12 @@
 @media screen and (min-width: 480px) {
     .journal .journal-bottom .journal-bottom-detail p {   
         line-height: 1.2;
-        margin-top: 0.1em;
         font-size: 1.2rem;
     }
 }
 @media screen and (min-width: 768px) {
     .journal .journal-bottom .journal-bottom-detail p {   
         line-height: 1.2;
-        margin-top: 0.1em;
         font-size: 1.3rem;
     }
 }
