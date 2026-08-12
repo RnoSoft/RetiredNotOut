@@ -1,0 +1,2 @@
+class="image-lsquare" 
+sizes="(max-width: 480px) 100vw, (max-width: 768px) 90vw, (max-width: 1000px) 75vw, 750px"
