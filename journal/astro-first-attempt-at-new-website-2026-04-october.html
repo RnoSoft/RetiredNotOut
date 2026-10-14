@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+<link rel="stylesheet" href="/assets/css/journal-common.4.0.css">
+<link rel="icon" href="/assets/favicon.ico">
+
+<title>Astro: Starting My New Website</title>
+
+<link rel="stylesheet" href="/assets/css/journal.4.0.css">
+</head>
+<body>
+<div class="container">
+<header class="header-area">
+    <div class="header-title">
+        
+        <p class="title">Retired Not Out, Paul Chappell's Journal</p>    
+    </div>
+    <nav class="header-nav">
+        
+            <p class="item"><a href="/">Home</a></p>
+        
+            <p class="item"><a href="/about">About</a></p>
+        
+            <p class="item"><a href="/blog/tags/">Tags</a></p>
+        
+            <p class="item"><a href="/blog/">Posts</a></p>
+        
+            <p class="item current"><a href="/journal/astro-first-attempt-at-new-website-2026-04-october">Journal</a></p>
+        
+    </nav>  
+</header>  
+<div class="clear-both"></div>
+ 
+ 
+
+<article class="main-area">
+<div class="journal">
+<main>
+
+    
+    
+        
+        
+            
+            
+            
+            
+                
+                
+                
+                
+                    
+                    
+                    
+                
+                    
+                    
+                    
+                        
+                        
+                        
+                        
+            
+        
+    
+
+    <section>
+        <div class="journal-title">
+        <h1>Astro: Starting My New Website</h1>
+        <h2>4th October 2026</h2>
+        </div>
+
+        <div class="journal-link">
+        <p>
+            Journal Posts:&nbsp<a href="/journal/redesigning-and-migrating-this-website-september-2026">Previous</a></p></div>
+
+        
+            <div class="journal-link">
+            <p><i></b>This post is part of a series of posts about moving my journal to Astro
+</i></p>
+            <p>        
+                Series Posts:&nbsp
+                <a href="/journal/redesigning-and-migrating-this-website-september-2026">First, </a>
+                
+                    <a href="/journal/redesigning-and-migrating-this-website-september-2026">Previous, </a>
+                
+                            
+                <a href="/journal/astro-first-attempt-at-new-website-2026-04-october">Last</a>
+            </p></div>
+        
+
+    </section>
+
+    <section class="journal-content">
+        <p class="p-image"><img class="image-square" srcset="
+        /content/blog/2026/10/04-01/lake 001-ws-500.jpg 500vw,
+        /content/blog/2026/10/04-01/lake 001-ws-1000.jpg 1000vw,
+        /content/blog/2026/10/04-01/lake 001-ws-1500.jpg 1500vw,
+        /content/blog/2026/10/04-01/lake 001-ws-2000.jpg 2000vw,
+        /content/blog/2026/10/04-01/lake 001-ws-2500.jpg 2500vw,
+        /content/blog/2026/10/04-01/lake 001-ws-3000.jpg 3000vw" sizes="(max-width: 480px) 100vw, (max-width: 768px) 90vw, (max-width: 1000px) 75vw, 750px" data-orig-file-path="D:\OneDrive\_photos\cannon\photos-2008\Oswestry Cottage\Lake Vyrnwy\Lake 001-ws.jpg" src="/content/blog/2026/10/04-01/lake 001-ws-1500.jpg" alt="Lake Vyrnwy on a hazy day." /></p>
+<p class="p-image-description">Lake Vyrnwy on a Hazy Day in April 2008</p>
+
+<p>Since my last post, I’ve been busy sussing out how to use <a target="_blank" href="https://astro.build/">Astro</a> to write my new website. It’s looking good. It’s far, far better than Jekyll. It’s much more powerful and easily extended.</p>
+
+<p>The main problem was figuring out how it works; how to use it. The only way to do this is to create an actual website, which is exactly what I did. I created a basic one based on my current Home, About, Journal, Contact, Copyright and Info pages, plus a 404 error page. It took a few iterations, but I eventually understood Astro well enough to create a website I was happy with.</p>
+
+<p>One thing I like is that it’s easy to extend Astro by adding your own code. All you need to do is learn <a target="_blank" href="https://www.typescriptlang.org/">TypeScript</a>, a programming language I like (mainly because it’s strongly typed). Before starting this project, I knew a little bit about it (from writing the <a target="_blank" href="https://ulverstonfallen.uk/">Ulverston Fallen</a> website). But I have a lot to learn before I really understand it. TypeScript compiles into JavaScript; in my humble opinion, it’s a much better way to write JavaScript.</p>
+
+<p>The new version of the website is <a target="_blank" href="https://astro.retirednotout.uk/">here</a>. Over the next few months, I’ll move the original website over. Along the way, I’ll tweak it and add a few new features. Eventually, the new version will become the actual version, and Jekyll will be history.</p>
+<h2 id="markdown">Markdown</h2>
+
+<p>I use <a target="_blank" href="https://markdown.org/">Markdown</a> to write my web page content. It’s simple to use. It’s easy to learn. It’s easy to write.</p>
+
+<p>The Markdown for a given web page (or journal post) is contained within  a single file. There are two parts to it: the Front Matter and the actual Markdown.</p>
+
+<p>The Front Matter contains variable data such as the post’s URL, the date it was written, the date it was last updated and the author. For my website, it contains links to the previous and next journal posts. It contains the names of the tabs associated with a journal post. Plus a lot more. In Jekyll, these values can only be accessed by the Theme.</p>
+
+<p>The Markdown is fixed text that cannot reference Front Matter. Authors, dates and links to the previous and next journal posts must be hard-coded into it (which duplicates values). The Markdown cannot contain any logic.</p>
+
+<p>I’m not really happy with this, but I’ve learnt to live with it.</p>
+
+<p>Within Markdown, it would be nice to access values in the Front Matter, such as the created and last updated dates, and the author (no more duplication). It would also be nice if it could contain logic; for example, only display a last updated date if a date has been specified.</p>
+
+<h2 id="markdown-for-components-mdx">Markdown for Components (MDX)</h2>
+
+<p><a target="_blank" href="https://mdxjs.com/">Markdown for Components</a> allows me to do the things I want to do in Markdown but can’t. It allows me to access Front Matter variables and add logic to my Markdown.</p>
+
+<p>Referencing Front Matter variables is easy enough; you place the value in curly brackets. For example, if the creation date is ‘20/09/2026’, then adding “<em>Date Created: {frontmatter.dateCreated}</em>” to the Markdown results in “<em>Date Created: 20/09/2026</em>” being added to the web page.</p>
+
+<p>A big problem with this approach is that the date isn’t formatted. What if we wanted the date to be formatted as “20th September 2026”? You can add JavaScript to the MDX to format the date, but this complicates the Markdown. It also has to be added to every Markdown file that wants to format a date. And people who are not programmers won’t be able to do this.</p>
+
+<p>With Astro, you can write <a target="_blank" href="https://docs.astro.build/en/basics/astro-components/">components</a> that can be easily referenced in the MDX text. A component has a name and zero, one or more parameters. For example, a component to format a date requires the date and the required format. It contains all of the JavaScript required to format the date. Once the component has been written and tested, it can be referenced and used in any MDX file.</p>
+
+<p>For the same date, the Markdown “<em>Date Created: &lt;FormatDate date = {frontmatter.date} format = ”DMY”/&gt;</em>” will be translated to “<em>Date Created: 20th September 2026</em>”.</p>
+
+<p>A component takes the parameters and generates the HTML (if any), which is added to the translated Markdown. Components are part of the Theme and do not require users to understand HTML. All of the HTML generation is hidden in the component.</p>
+
+<p>Components are very, very powerful. I’ll be investigating them further as I port my website to an Astro-based one. For now, I’ve only created a few simple ones. As this project continues, they will get more and more complicated. I suspect I’m going to be creating a lot of components.</p>
+
+<h2 id="an-issue-with-this-approach">An Issue With This Approach</h2>
+
+<p>Until I came across Astro, I’d never heard of Markdown for Components. At present, I have no idea how common it is in other website generators. And, more importantly, if it is, does it work the same way? Moving my Jekyll-based website to Astro could make it difficult or impossible for me to move to another website generator in the future. It’ll certainly be impossible to move it back to Jekyll.</p>
+
+<p>Last January, <a target="_blank" href="https://blog.cloudflare.com/astro-joins-cloudflare/">Cloudflare acquired Astro</a>. They tell us it’ll continue to be open-source software, distributed under the MIT license. Who knows. But given the incredibly strong community of open-source developers writing for it, I suspect this’ll be true. If Cloudflare keeps its promise, this is good. With Cloudflare, hopefully there will be a budget for further developing Asto (people might write open-source code for free, but the project still has costs, such as databases and servers).</p>
+
+<p>After some thought, I decided to throw my lot in with Astro; component-based Markdown looks very exciting. I’m sure components will be extremely useful for my journal.</p>
+
+<h2 id="astro-code">Astro Code</h2>
+
+<p>In this series of posts about moving my journal to Astro, I’ll write about the components I create and the new features I add to my website. About how I use them for things like image manipulation and creating a database of external links (so I can automatically check if a link disappears (a 404 error) or the content changes). About how I automated the links between individual journal posts and posts in a series (which are hard-coded at present).</p>
+
+<p>I won’t be writing about how I actually wrote the code for my components and features. I’m too busy porting my website and adding new posts to the old website. Soon, I’ll publish the code behind these components and features on GitHub. You can then view them and even use them yourself (they’ll be published under an MIT license).</p>
+
+
+    </section>
+
+    <section class = "journal-bottom">
+
+        <div class="journal-bottom-detail">
+           <p>
+                Journal Posts:&nbsp<a href="/journal/redesigning-and-migrating-this-website-september-2026">Previous</a></p>
+
+            
+                <p>
+                    Series Posts:&nbsp          
+                    <a href="/journal/redesigning-and-migrating-this-website-september-2026">First, </a>
+                    
+                        <a href="/journal/redesigning-and-migrating-this-website-september-2026">Previous, </a>
+                    
+                                  
+                    <a href="/journal/astro-first-attempt-at-new-website-2026-04-october">Last</a>
+                </p>
+            
+        </div>
+        <div class="journal-bottom-detail">    
+            <p>First Published: 4th October 2026</p>
+
+        <p>Author: Paul Chappell</p>
+    
+
+    
+
+        <p>Tag: <a href="/blog/tags/this-website/">This-Website</a></p>
+    
+ 
+        </div>
+        
+    </section>
+</main>
+</div>
+</article>
+
+<div class="clear-both"></div>
+<footer class="footer-area">
+    <nav class="foot-nav">
+        
+            <p class="item"><a href="/">Home</a></p>
+        
+            <p class="item"><a href="/about">About</a></p>
+        
+            <p class="item"><a href="/blog/tags/">Tags</a></p>
+        
+            <p class="item"><a href="/blog/">Posts</a></p>
+        
+            <p class="item current"><a href="/journal/astro-first-attempt-at-new-website-2026-04-october">Journal</a></p>
+        
+            <p class="item"><a href="/contact">Contact</a></p>
+        
+            <p class="item"><a href="/copyright">Copyright</a></p>
+        
+            <p class="item"><a href="/info">Info</a></p>
+        
+    </nav>  
+    <div class="foot-text">
+        <p class="centre">Copyright © 2024 Paul Chappell. All Rights Reserved</p>
+        <p class="centre">Built With <a href="https://jekyllrb.com/">Jekyll</a>; Hosted By <a href="https://pages.github.com/">GitHub Pages</a></p>
+    </div>
+</footer>
+            
+</div>
+</body>
+</html>
