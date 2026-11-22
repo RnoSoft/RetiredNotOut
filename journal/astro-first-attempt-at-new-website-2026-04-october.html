@@ -6,7 +6,7 @@
 <link rel="stylesheet" href="/assets/css/journal-common.4.0.css">
 <link rel="icon" href="/assets/favicon.ico">
 
-<title>Astro: Starting My New Website</title>
+<title>Astro: Issues With Markdown</title>
 
 <link rel="stylesheet" href="/assets/css/journal.4.0.css">
 </head>
@@ -27,7 +27,7 @@
         
             <p class="item"><a href="/blog/">Posts</a></p>
         
-            <p class="item"><a href="/journal/christmas-comes-early-november-2026-05">Journal</a></p>
+            <p class="item"><a href="/journal/diary-for-week-ending-22-november-2026">Journal</a></p>
         
     </nav>  
 </header>  
@@ -68,7 +68,7 @@
 
     <section>
         <div class="journal-title">
-        <h1>Astro: Starting My New Website</h1>
+        <h1>Astro: Issues With Markdown</h1>
         <h2>4th October 2026</h2>
         </div>
 
@@ -109,14 +109,15 @@
 
 <p>One thing I like is that it’s easy to extend Astro by adding your own code. All you need to do is learn <a target="_blank" href="https://www.typescriptlang.org/">TypeScript</a>, a programming language I like (mainly because it’s strongly typed). Before starting this project, I knew a little bit about it (from writing the <a target="_blank" href="https://ulverstonfallen.uk/">Ulverston Fallen</a> website). But I have a lot to learn before I really understand it. TypeScript compiles into JavaScript; in my humble opinion, it’s a much better way to write JavaScript.</p>
 
-<p>The new version of the website is <a target="_blank" href="https://astro.retirednotout.uk/">here</a>. Over the next few months, I’ll move the original website over. Along the way, I’ll tweak it and add a few new features. Eventually, the new version will become the actual version, and Jekyll will be history.</p>
-<h2 id="markdown">Markdown</h2>
+<p>The new version of the website is <a target="_blank" href="https://astro.retirednotout.uk/">here</a>. Over the next few months, I’ll move the original website over to it. Along the way, I’ll tweak it and add a few new features. Eventually, the new version will become the actual version, and Jekyll will be history.</p>
+
+<h2 id="markdown-md-files">Markdown (MD Files)</h2>
 
 <p>I use <a target="_blank" href="https://markdown.org/">Markdown</a> to write my web page content. It’s simple to use. It’s easy to learn. It’s easy to write.</p>
 
-<p>The Markdown for a given web page (or journal post) is contained within  a single file. There are two parts to it: the Front Matter and the actual Markdown.</p>
+<p>The Markdown for a given web page (or journal post) is contained within  a single file. There are two parts to the file: the Front Matter and the Markdown.</p>
 
-<p>The Front Matter contains variable data such as the post’s URL, the date it was written, the date it was last updated and the author. For my website, it contains links to the previous and next journal posts. It contains the names of the tabs associated with a journal post. Plus a lot more. In Jekyll, these values can only be accessed by the Theme.</p>
+<p>The Front Matter contains variable data such as the post’s URL, the date it was written, the date it was last updated and the author. For my website, it contains links to the previous and next journal posts. It contains the names of the tags associated with a journal post. Plus a lot more. In Jekyll, these values can only be accessed by the Theme.</p>
 
 <p>The Markdown is fixed text that cannot reference Front Matter. Authors, dates and links to the previous and next journal posts must be hard-coded into it (which duplicates values). The Markdown cannot contain any logic.</p>
 
@@ -124,27 +125,27 @@
 
 <p>Within Markdown, it would be nice to access values in the Front Matter, such as the created and last updated dates, and the author (no more duplication). It would also be nice if it could contain logic; for example, only display a last updated date if a date has been specified.</p>
 
-<h2 id="markdown-for-components-mdx">Markdown for Components (MDX)</h2>
+<h2 id="markdown-for-components-mdx-files">Markdown for Components (MDX Files)</h2>
 
 <p><a target="_blank" href="https://mdxjs.com/">Markdown for Components</a> allows me to do the things I want to do in Markdown but can’t. It allows me to access Front Matter variables and add logic to my Markdown.</p>
 
-<p>Referencing Front Matter variables is easy enough; you place the value in curly brackets. For example, if the creation date is ‘20/09/2026’, then adding “<em>Date Created: {frontmatter.dateCreated}</em>” to the Markdown results in “<em>Date Created: 20/09/2026</em>” being added to the web page.</p>
+<p>Referencing Front Matter is easy; you place the value in curly brackets. For example, if the creation date is ‘20/09/2026’, then adding “Date Created: {frontmatter.dateCreated}” to the Markdown results in “Date Created: 20/09/2026” being added to the rendered web page.</p>
 
-<p>A big problem with this approach is that the date isn’t formatted. What if we wanted the date to be formatted as “20th September 2026”? You can add JavaScript to the MDX to format the date, but this complicates the Markdown. It also has to be added to every Markdown file that wants to format a date. And people who are not programmers won’t be able to do this.</p>
+<p>A big problem with this approach is that the date isn’t formatted. What if we wanted the date to be formatted as “20th September 2026”? You can add JavaScript to the MDX to format it, but this complicates the Markdown. It also has to be added to every Markdown file that wants to format a date. People who are not programmers might not be able to do this.</p>
 
-<p>With Astro, you can write <a target="_blank" href="https://docs.astro.build/en/basics/astro-components/">components</a> that can be easily referenced in the MDX text. A component has a name and zero, one or more parameters. For example, a component to format a date requires the date and the required format. It contains all of the JavaScript required to format the date. Once the component has been written and tested, it can be referenced and used in any MDX file.</p>
+<p>With Astro, you can write components that can be easily referenced in the MDX text. A component has a name and zero, one or more parameters. A component to format a date will require the date and the required format. It contains the JavaScript for formatting the date and adding it to the rendered web page. Once the component has been written and tested, it can be referenced and used in any MDX file.</p>
 
-<p>For the same date, the Markdown “<em>Date Created: &lt;FormatDate date = {frontmatter.date} format = ”DMY”/&gt;</em>” will be translated to “<em>Date Created: 20th September 2026</em>”.</p>
+<p>For the same date, the Markdown “&lt;FormatDate date={frontmatter.date} format=’DMY’/&gt;” formats the date to “20th September 2026”. The component is called ‘FormatDate’.</p>
 
-<p>A component takes the parameters and generates the HTML (if any), which is added to the translated Markdown. Components are part of the Theme and do not require users to understand HTML. All of the HTML generation is hidden in the component.</p>
+<p>A component takes the parameters and generates the HTML (if any), which is added to the rendered Markdown. Components are part of the Theme and do not require users to understand HTML.</p>
 
-<p>Components are very, very powerful. I’ll be investigating them further as I port my website to an Astro-based one. For now, I’ve only created a few simple ones. As this project continues, they will get more and more complicated. I suspect I’m going to be creating a lot of components.</p>
+<p>Components are very, very powerful. I’ll be investigating them further as I port my website across. For now, I’ve only created a few simple ones. As this project continues, they will get more and more complicated. I suspect I’ll be writing a lot of them.</p>
 
-<h2 id="an-issue-with-this-approach">An Issue With This Approach</h2>
+<h2 id="an-issue-with-astro">An Issue With Astro</h2>
 
 <p>Until I came across Astro, I’d never heard of Markdown for Components. At present, I have no idea how common it is in other website generators. And, more importantly, if it is, does it work the same way? Moving my Jekyll-based website to Astro could make it difficult or impossible for me to move to another website generator in the future. It’ll certainly be impossible to move it back to Jekyll.</p>
 
-<p>Last January, <a target="_blank" href="https://blog.cloudflare.com/astro-joins-cloudflare/">Cloudflare acquired Astro</a>. They tell us it’ll continue to be open-source software, distributed under the MIT license. Who knows. But given the incredibly strong community of open-source developers writing for it, I suspect this’ll be true. If Cloudflare keeps its promise, this is good. With Cloudflare, hopefully there will be a budget for further developing Asto (people might write open-source code for free, but the project still has costs, such as databases and servers).</p>
+<p>Last January, <a target="_blank" href="https://blog.cloudflare.com/astro-joins-cloudflare/">Cloudflare acquired Astro</a>. They tell us it’ll continue to be open-source software, distributed under the MIT license. Who knows. But given the incredibly strong community of open-source developers writing for it, I suspect this’ll be true. If Cloudflare keeps its promise, this is good. With Cloudflare, hopefully there will be a budget for further developing Astro (people might write open-source code for free, but the project still has costs, such as databases and servers).</p>
 
 <p>After some thought, I decided to throw my lot in with Astro; component-based Markdown looks very exciting. I’m sure components will be extremely useful for my journal.</p>
 
@@ -205,7 +206,7 @@
         
             <p class="item"><a href="/blog/">Posts</a></p>
         
-            <p class="item"><a href="/journal/christmas-comes-early-november-2026-05">Journal</a></p>
+            <p class="item"><a href="/journal/diary-for-week-ending-22-november-2026">Journal</a></p>
         
             <p class="item"><a href="/contact">Contact</a></p>
         
